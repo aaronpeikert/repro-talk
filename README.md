@@ -1,6 +1,6 @@
-# Talk on &ldquo;Entropy&rdquo;
+# Talk on &ldquo;Reproducible Research&rdquo;
 
-Here you can find the [notes](https://github.com/aaronpeikert/12Monkeys/releases/download/final/12monkeys_withnotes.pdf), [dark slides](https://github.com/aaronpeikert/12Monkeys/releases/download/final/12monkeys.pdf) & [bright slides](https://github.com/aaronpeikert/12Monkeys/releases/download/final/12monkeys_bright.pdf).
+Here you can find the [notes](https://github.com/aaronpeikert/repro-talk/releases/download/final/repro-talk_withnotes.pdf), [dark slides](https://github.com/aaronpeikert/repro-talk/releases/download/final/repro-talk.pdf) & [bright slides](https://github.com/aaronpeikert/repro-talk/releases/download/final/repro-talk_bright.pdf).
 
 ---
 
