@@ -1,0 +1,13 @@
+*_bright.*
+*_withnotes.*
+*.aux
+*.log
+*.nav
+*.out
+*.pdf
+*.snm
+*.toc
+*.vrb
+Examples/
+12monkeys.tex
+*.pdfpc
