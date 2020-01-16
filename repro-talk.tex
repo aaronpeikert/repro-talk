@@ -15,10 +15,11 @@
 
 \title{Automating Reproducibility}
 \subtitle{A Reproducible Data Analysis Workflow with R\nobreakspace{}Markdown, Git, Make, and Docker}
-\author{\href{https://github.com/aaronpeikert/}{Aaron Peikert\textsuperscript{1,2}\\ \&\\ Andreas Brandmaier\textsuperscript{1}}}
+\author{\href{https://github.com/aaronpeikert/}{Aaron Peikert\textsuperscript{1,2}\\ \&\\ Andreas M. Brandmaier\textsuperscript{1,3}}}
 \institute{
 \textsuperscript{1}Max Planck Institute of Human Development\\
-\textsuperscript{2}Humboldt{\textendash}Universität zu Berlin
+\textsuperscript{2}Humboldt{\textendash}Universität zu Berlin\\
+\textsuperscript{3}Max Planck UCL Centre for Computational Psychiatry and Ageing Research
 }
 \date{
 \scriptsize {\lolit Slides:} \href{https://github.com/aaronpeikert/repro-talk}{\tt \scriptsize
@@ -63,7 +64,7 @@
   \item data originally used
   \item code originally used
 \end{itemize}
-\onslide<2->{Shouldn't that be enough? }\onslide<3>{\textcolor{hilit}{Unlikely.}}
+\onslide<2->{Shouldn't that be enough for \textcolor<2>{vhilit}{Reproducibility}? }\onslide<3>{\textcolor{hilit}{Unlikely.}}
 \end{frame}
 
 {
@@ -92,20 +93,25 @@
 \end{frame}
 
 \begin{frame}[c]{Tools for R Users}
+	In the R Universe and beyond the most popular are:
   \begin{itemize}
-    \item literate programming = RMarkdown
-    \item version control = Git
-    \item dependency management = Make
-    \item containerization = Docker
+    \item literate programming = RMarkdown*
+    \item version control = Git**
+    \item dependency management = Make**
+    \item containerization = Docker**
   \end{itemize}
   \vfill
-  \textcolor{lolit}{*Note: There are many great alternatives,\\they just happen not to be used as much.}
+  \textcolor{lolit}{
+	* RMarkdown supports more then 40 languages e.g.:\\
+	\hspace{10mm}Python, Julia, SAS, Scala \& Octave\\
+	** Language agnostic
+	}
 \end{frame}
 
 \begin{frame}[c]{RMarkdown\textemdash{}Literate Programming}
   Text and code are intermingled\\
   into a single source document\\
-  that can be dynamically compiled\\
+  that can be \textcolor{hilit}{dynamically} compiled\\
   into various representations:
   \begin{itemize}
     \item (APA conformable) manuscripts
@@ -142,7 +148,7 @@ I would argue that the most important tool for reproducible research is [...] GN
 
 \begin{frame}[c, fragile]{Make\textemdash{}Dependency Management}
 
-Make is a ``recipe" language that describes how files relate to each other.
+Make is a ``recipe" language that describes how files depend on each other and how to resolve these dependencies.
 \vspace{10mm}
 \begin{lstlisting}[language=make,basicstyle=\ttfamily\scriptsize]
 cfcs-example.pdf: cfcs-example.Rmd data/CFCS.csv
