@@ -99,7 +99,7 @@
     \item containerization = Docker
   \end{itemize}
   \vfill
-  \textcolor{lolit}{*Note: There are many great alternatives,\\they just happen to be not used as much.}
+  \textcolor{lolit}{*Note: There are many great alternatives,\\they just happen not to be used as much.}
 \end{frame}
 
 \begin{frame}[c]{RMarkdown\textemdash{}Literate Programming}
@@ -108,7 +108,7 @@
   that can be dynamically compiled\\
   into various representations:
   \begin{itemize}
-    \item (apa conformable) manuscripts
+    \item (APA conformable) manuscripts
     \item presentations
     \item websites
     \item books
@@ -142,7 +142,7 @@ I would argue that the most important tool for reproducible research is [...] GN
 
 \begin{frame}[c, fragile]{Make\textemdash{}Dependency Management}
 
-Make is ``recipe" language that describes how files relate to each other.
+Make is a ``recipe" language that describes how files relate to each other.
 \vspace{10mm}
 \begin{lstlisting}[language=make,basicstyle=\ttfamily\scriptsize]
 cfcs-example.pdf: cfcs-example.Rmd data/CFCS.csv
@@ -155,7 +155,7 @@ data/CFCS.csv: R/00load_data.R
 
 \begin{frame}[c, fragile]{Docker\textemdash{}Containerization}
 	Docker is a lightweight virtual computer that is completely independent.\\
-	Dockerfiles are ``recipes" which describe what to install on that virtual computer:
+	Dockerfiles are ``recipes" that describe what to install on that virtual computer:
 	\vspace{10mm}
 	\begin{lstlisting}[language=make,basicstyle=\ttfamily\scriptsize]
 FROM rocker/verse:3.6.1
@@ -171,20 +171,38 @@ WORKDIR /home/rstudio
 \begin{itemize}
 	\item The `repro' package shall:
 	\begin{itemize}
+		\item come soon on: \href{https://github.com/aaronpeikert/repro}{https://github.com/aaronpeikert/repro}
 		\item ease the installation process
 		\item automatize the setup of new projects
-		\item abstract away Docker \& Make
+		\item put an end to manual writing of Docker- \& Makefiles
 		\item enable automatic execution on GitHub
 	\end{itemize}
 	\item hands-on workshop
 	\begin{itemize}
-		\item Where? MPI Berlin.
-		\item When? 20.02.20 10-16
+		\item Where? MPIB Berlin
+		\item When? 20.02.20 10h00 \textendash{} 16h00
 	\end{itemize}
 	\item \textcolor{lolit}{replicable preregistered collaboration project}
 \end{itemize}
 \vspace{10mm}
 Interested?! Write me an e-mail:\\ \hfill \textcolor{lolit}{peikert@mpib-berlin.mpg.de}
+\end{frame}
+
+\begin{frame}[c]{Further Reading}
+	\begin{itemize}
+		\item Preprint of this workflow:\\ \href{https://psyarxiv.com/8xzqy/}{https://psyarxiv.com/8xzqy/}
+		\item Testbed for this workflow:\\ \href{https://github.com/aaronpeikert/workflow-showcase}{https://github.com/aaronpeikert/workflow-showcase}
+		\item Best talk on the topic:\\ \href{https://github.com/karthik/rstudio2019}{https://github.com/karthik/rstudio2019}
+		\item For a deep dive:\\ \href{https://github.com/alan-turing-institute/the-turing-way}{https://github.com/alan-turing-institute/the-turing-way}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[c]{One little thing}
+	\textcolor{lolit}{It would be great to know from which place you come!}\\
+	Could you answer ten questions regarding this talk on:\\
+	\centering \large
+	\textcolor{hilit}{\href{repro.formr.org}{repro.formr.org}}\\
+	\Huge ?
 \end{frame}
 
 \end{document}
