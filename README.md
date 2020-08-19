@@ -1,6 +1,6 @@
 # Talk on &ldquo;Reproducible Research&rdquo;
 
-Here you can find the [notes](https://github.com/aaronpeikert/repro-talk/releases/download/final/repro-talk_withnotes.pdf), [dark slides](https://github.com/aaronpeikert/repro-talk/releases/download/final/repro-talk.pdf) & [bright slides](https://github.com/aaronpeikert/repro-talk/releases/download/final/repro-talk_bright.pdf).
+Here you can find the [dark slides](https://github.com/aaronpeikert/repro-talk/releases/download/final-mpib2020/repro-talk.pdf), [bright slides](https://github.com/aaronpeikert/repro-talk/releases/download/final-mpib2020/repro-talk_bright.pdf)[video version](https://github.com/aaronpeikert/repro-talk/releases/download/final-mpib2020/repro-talk.mp4)
 
 This talk is a teaser for the (in progress paper) to a work in progress paper by Aaron Peikert[![ORCIDiD](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0001-7813-818X) and Andreas Brandmaier [![ORCIDiD](https://orcid.org/sites/default/files/images/orcid_16x16.png)](http://orcid.org/0000-0001-8765-6982). You find the preprint over [here](https://psyarxiv.com/8xzqy/)
 
