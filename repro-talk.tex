@@ -14,12 +14,11 @@
 % title info
 
 \title{Automating Reproducibility}
-\subtitle{A Reproducible Data Analysis Workflow with R\nobreakspace{}Markdown, Git, Make, and Docker}
-\author{\href{https://github.com/aaronpeikert/}{Aaron Peikert\textsuperscript{1,2}\\ \&\\ Andreas M. Brandmaier\textsuperscript{1,3}}}
+\subtitle{A Reproducible Data Analysis Workflow with RMarkdown, Git, Make, and Docker}
+\author{\href{https://github.com/aaronpeikert/}{Aaron Peikert\textsuperscript{1,2}\\}}
 \institute{
 \textsuperscript{1}Max Planck Institute of Human Development\\
 \textsuperscript{2}Humboldt{\textendash}Universität zu Berlin\\
-\textsuperscript{3}Max Planck UCL Centre for Computational Psychiatry and Ageing Research
 }
 \date{
 \scriptsize {\lolit Slides:} \href{https://github.com/aaronpeikert/repro-talk}{\tt \scriptsize
@@ -51,7 +50,7 @@
   \textcolor<2>{lolit}{\hfill {\textendash} Albert Einstein}\\
   \onslide<2>{
   \begin{center}
-  As it turns out doing the\\
+  As it turns out, doing the\\
     \textcolor{hilit}{{\large same thing}}\\
   is pretty complicated.
 \end{center}}
@@ -66,34 +65,57 @@
 \end{itemize}
 \onslide<2->{Shouldn't that be enough for \textcolor<2>{vhilit}{Reproducibility}? }\onslide<3>{\textcolor{hilit}{Unlikely.}}
 \end{frame}
-
 {
   \usebackgroundtemplate{\includegraphics[width=\paperwidth]{Figs/ikea.png}}
   \begin{frame}[plain]
   \end{frame}
 }
 
-\begin{frame}[c]{Specify Everything}
-  \textcolor<3->{lolit}{The relations between\\
-  \textcolor<2>{hilit}{code}, \textcolor<2>{hilit}{data}, \textcolor<2>{hilit}{results} and their \textcolor<2>{hilit}{environment}\\
-  need to be \textcolor<2>{vhilit}{unambiguously} specified.\\}
-  \vspace{10mm}
-  \onslide<3->{\textcolor<4->{lolit}{
-  IMHO: Only computer code is unambiguous.\\}}
-  \onslide<4>{Spoiler: Computer code is \textcolor{hilit}{not} unambiguous.}
+\begin{frame}[c]{Problems}
+	\onslide<1->\textcolor<2->{lolit}{How do I generate this plot, table, result?}\\
+	\onslide<2->\textcolor<3->{lolit}{Is this the correct version of the data and code?}\\
+	\onslide<3->\textcolor<4->{lolit}{How do I run this code? Do I have all files neccesary?}\\
+	\onslide<4>What software/packages do I need and how do I install them?
 \end{frame}
 
-\begin{frame}[c]{Concepts to fix relations}
+\begin{frame}[c]{Specify Everything}
+  The relations between\\
+  \textcolor<2>{hilit}{code}, \textcolor<2>{hilit}{data}, \textcolor<2>{hilit}{results} and their \textcolor<2>{hilit}{environment}\\
+  need to be \textcolor<2>{vhilit}{unambiguously} specified.
+\end{frame}
+
+\begin{frame}[c]{Why should I care?}
+	\only<1>{
+		Productivity:
+		\begin{itemize}
+			\item reuse
+			\item easier collaboration
+		\end{itemize}
+	}
+	\only<2>{
+	Good scientific practice:
+		\begin{itemize}
+			\item reproducibility is a precondition for replication
+			\item increases transparency and (longterm) accessibility
+		\end{itemize}
+	}
+\end{frame}
+
+
+\begin{frame}[c]{Lessons from software engeniering}
   \begin{itemize}
-    \item Code \textemdash{} document = literate programming
+    \item Code \textemdash{} document = dynamic document generation
     \item Code version \textemdash{} data version = version control
     \item Code \textemdash{} interim results = dependency management
     \item Code \textemdash{} execution environment = containerization
   \end{itemize}
+	\vfill
+	\textcolor{lolit}{\tiny Peikert, A., \& Brandmaier, A. M. (2019). A Reproducible Data Analysis Workflow with R Markdown,
+Git, Make, and Docker [Preprint].PsyArXiv. https://doi.org/10.31234/osf.io/8xzqy}
 \end{frame}
 
 \begin{frame}[c]{Tools for R Users}
-	In the R Universe and beyond the most popular are:
+	In the R Universe and beyond, the most flexible tools are:
   \begin{itemize}
     \item literate programming = RMarkdown*
     \item version control = Git**
@@ -109,8 +131,8 @@
 \end{frame}
 
 \begin{frame}[c]{RMarkdown\textemdash{}Literate Programming}
-  Text and code are intermingled\\
-  into a single source document\\
+  Text and code are mixed\\
+  in a single source document\\
   that can be \textcolor{hilit}{dynamically} compiled\\
   into various representations:
   \begin{itemize}
@@ -119,6 +141,7 @@
     \item websites
     \item books
     \item posters
+		\item CV
   \end{itemize}
 \end{frame}
 
@@ -139,12 +162,6 @@
   It guarantees that code and data are exactly the same version as used for
   publication.
 \end{frame}
-\begin{frame}[c]{Make\textemdash{}Dependency Management}
-
-I would argue that the most important tool for reproducible research is [...] GNU make.\\
-\hfill {\textendash} \href{https://kbroman.org/minimal_make/}{Karl Broman}\\
-
-\end{frame}
 
 \begin{frame}[c, fragile]{Make\textemdash{}Dependency Management}
 
@@ -160,7 +177,7 @@ data/CFCS.csv: R/00load_data.R
 \end{frame}
 
 \begin{frame}[c, fragile]{Docker\textemdash{}Containerization}
-	Docker is a lightweight virtual computer that is completely independent.\\
+	Docker is a lightweight virtual computer.\\
 	Dockerfiles are ``recipes" that describe what to install on that virtual computer:
 	\vspace{10mm}
 	\begin{lstlisting}[language=make,basicstyle=\ttfamily\scriptsize]
@@ -172,43 +189,76 @@ WORKDIR /home/rstudio
 \end{lstlisting}
 \end{frame}
 
-\begin{frame}[c]{Future}
+\begin{frame}[c]{Advantages}
+	\begin{center}
+		\onslide<1->{\textcolor<2->{lolit}{Unambiguous }}
+		\onslide<2->{\textcolor<3->{lolit}{Standardized }}
+		\onslide<3->{\textcolor<4->{lolit}{Portable }}
+		\onslide<4->{Automated }
+	\end{center}
+\end{frame}
 
+\begin{frame}[c]{Simplifying the tools}
+
+\textcolor<2->{lolit}{These tools require extensive training and need much time to configure correctly.\\}
+\onslide<2->\textcolor<3->{lolit}{The R package 'repro' abstracts away the concrete technical implementation:\\}
+\onslide<3->{\centering \Huge Live Demo}
+
+\end{frame}
+
+\begin{frame}[c]{Disadvantages}
 \begin{itemize}
-	\item The `repro' package shall:
-	\begin{itemize}
-		\item come soon on: \href{https://github.com/aaronpeikert/repro}{https://github.com/aaronpeikert/repro}
-		\item ease the installation process
-		\item automatize the setup of new projects
-		\item put an end to manual writing of Docker- \& Makefiles
-		\item enable automatic execution on GitHub
-	\end{itemize}
-	\item hands-on workshop
-	\begin{itemize}
-		\item Where? MPIB Berlin
-		\item When? 20.02.20 10h00 \textendash{} 16h00
-	\end{itemize}
-	\item \textcolor{lolit}{replicable preregistered collaboration project}
+	\item requires complex software infrastructure
+	\item depends on for-profit services
+	\item diverges from the standard manuscript workflow
 \end{itemize}
-\vspace{10mm}
-Interested?! Write me an e-mail:\\ \hfill \textcolor{lolit}{peikert@mpib-berlin.mpg.de}
 \end{frame}
 
-\begin{frame}[c]{Further Reading}
+\begin{frame}[c]{Focus: Longterm Archive}
+	\textcolor<2>{lolit}{All software is bundled into the container, therefore all we need is:}
 	\begin{itemize}
-		\item Preprint of this workflow:\\ \href{https://psyarxiv.com/8xzqy/}{https://psyarxiv.com/8xzqy/}
-		\item Testbed for this workflow:\\ \href{https://github.com/aaronpeikert/workflow-showcase}{https://github.com/aaronpeikert/workflow-showcase}
-		\item Best talk on the topic:\\ \href{https://github.com/karthik/rstudio2019}{https://github.com/karthik/rstudio2019}
-		\item For a deep dive:\\ \href{https://github.com/alan-turing-institute/the-turing-way}{https://github.com/alan-turing-institute/the-turing-way}
+		\item \textcolor<2>{lolit}{container software}
+		\item \textcolor<2>{lolit}{storage infrastructure}
 	\end{itemize}
+
+	\onslide<2>{
+	What happens when Docker and co. are not supported anymore?\\
+	Containers can be converted into a full system image ensuring support for decades.
+	}
+
 \end{frame}
 
-\begin{frame}[c]{One little thing}
-	\textcolor{lolit}{It would be great to know from what place you come!}\\
-	Could you answer ten questions regarding this talk on:\\
-	\centering \large
-	\textcolor{hilit}{\href{repro.formr.org}{repro.formr.org}}\\
-	\Huge ?
+\begin{frame}[c]{Focus: Computing infrastructure}
+	\centering
+	\onslide<1-2>{Dependency management + containerization\\}
+	\onslide<2>{=\\}
+	\onslide<2->{\textcolor<5->{lolit}{distributed computation\\}}
+	\onslide<3->{\textcolor<5->{lolit}{on\\}}
+	\only<3>{\textcolor{hilit}{High Performance Computing cluster\\}}
+	\only<4->{\textcolor<4>{vhilit}{\textcolor<5->{lolit}{Cloud Computing infrastructure\\}}}
+	\onslide<5->{\textcolor<5->{lolit}{=\\}}
+	\onslide<5->{Upon change, the manuscript is rerendered assuring reproducibility.}
+\end{frame}
+
+\begin{frame}[c]{Focus: Modularity}
+\begin{itemize}
+	\item<1-> repro is a modular system
+	\item<2-> potential integration of other workflows\\
+	\item<3-> ``Lego system of reproducibility tools"
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[c]{References}
+	\textcolor{lolit}{Slides:\\}\href{https://github.com/aaronpeikert/repro-talk}{\texttt{\textcolor{foreground}{https://github.com/aaronpeikert/repro-talk}}}
+	\textcolor{lolit}{Package:\\}\href{https://github.com/aaronpeikert/repro-thesis}{\texttt{\textcolor{foreground}{https://github.com/aaronpeikert/repro-thesis}}}\\
+	\textcolor{lolit}{Workflow:\\}\href{https://doi.org/10.31234/osf.io/8xzqy}{\texttt{\textcolor{foreground}{https://doi.org/10.31234/osf.io/8xzqy}}}
+\end{frame}
+
+\begin{frame}[c]
+  \Huge
+	\only<1>{Thank you}
+	\only<2>{Questions?}
 \end{frame}
 
 \end{document}
