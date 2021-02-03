@@ -8,7 +8,10 @@ Authors: Peikert, Aaron and Brandmaier, Andreas M.
 https://www.conference-service.com/ressyn-bigdata/xpage.html?xpage=237&lang=en
 https://www.conference-service.com/ressyn-bigdata/xpage.html?xpage=234&lang=en
 -->
-The rules of "good scientific practice" mandate that a research artefact is reproducible. Reproducibility is ensured if the same results can be obtained with the same data from the same analysis. Big data applications particulary are threatened by non-reproducibility because data often come multiple sources, are large and messy and preprocessing may rely on multiple software packages. Then, it becomes increasingly difficult to track and document all steps of an analysis pipeline and guarantee their reproducibility.
+The rules of "good scientific practice" mandate that a research artefact is reproducible.
+Reproducibility is ensured if the same results can be obtained with the same data from the same analysis.
+Big data applications particulary are threatened by non-reproducibility because data often come multiple sources, are large and messy and preprocessing may rely on multiple software packages.
+Then, it becomes increasingly difficult to track and document all steps of an analysis pipeline and guarantee their reproducibility.
 
 ## Objectives
 
@@ -24,7 +27,8 @@ Four concepts are necessary to meet these demands:
 
 ## Approach
 
-Increasing the degree of automation is crucial to ensure reproducibility in big data applications. We propose to adapt and apply tools in research contexts that were originally meant for software development:
+Increasing the degree of automation is crucial to ensure reproducibility in big data applications.
+We propose to adapt and apply tools in research contexts that were originally meant for software development:
 
 <!-- yes I repeat myself, but if one point sticks it is hopefully the four pillars -->
 1. Software management with `Docker` ensures a stable software environment across changing computing environments -- even across thousands of nodes in distributed environments,
