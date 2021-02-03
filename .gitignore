@@ -8,7 +8,7 @@
 *.snm
 *.toc
 *.vrb
-Examples/
-12monkeys.tex
+.tex
 *.pdfpc
 .Rproj.user
+*.html
