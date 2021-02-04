@@ -32,9 +32,9 @@ We propose to adapt and apply tools in research contexts that were originally me
 
 <!-- yes I repeat myself, but if one point sticks it is hopefully the four pillars -->
 1. Software management with `Docker` ensures a stable software environment across changing computing environments -- even across thousands of nodes in distributed environments,
-2. dependency tracking with `Make` composes complex (pre-)processing pipelines,
-3. dynamic document creation with `RMarkdown` helps to recreate results anytime, and
-4. version control with `Git` tracks snapshots of the analysis over time.
+2. dependency tracking with `Make` documents and automates complex processing pipelines,
+3. dynamic document creation with `RMarkdown` helps to recreate manuscripts describing results, and
+4. version control with `Git` tracks snapshots of the analysis worflow over time.
 
 While these tools have proven to be effective, their origin in software engineering requires a steep learning curve for researchers, who are typically not trained in using them.
 We believe a layer of abstraction may ease access to these tools and their merits for reproducibility.
