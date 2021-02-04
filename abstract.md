@@ -1,6 +1,7 @@
-# Title: Reproducibility in Big Data with the repro package
-
-Authors: Peikert, Aaron and Brandmaier, Andreas M.
+---
+title: "Reproducibility in Big Data with the repro package"
+author: "Peikert, Aaron and Brandmaier, Andreas M."
+---
 
 ## Background
 <!-- this abstract should be between 350 and 1000 words-->
@@ -40,7 +41,6 @@ While these tools have proven to be effective, their origin in software engineer
 We believe a layer of abstraction may ease access to these tools and their merits for reproducibility.
 The R package [`repro`](https://github.com/aaronpeikert/repro) wraps everyday tasks into composable building blocks.
 [`repro`](https://github.com/aaronpeikert/repro) makes it easier to follow best practices by automatically configuring the needed tools. 
-
 
 ## Implications
 
