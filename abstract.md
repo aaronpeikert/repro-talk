@@ -39,7 +39,8 @@ We propose to adapt and apply tools in research contexts that were originally me
 While these tools have proven to be effective, their origin in software engineering requires a steep learning curve for researchers, who are typically not trained in using them.
 We believe a layer of abstraction may ease access to these tools and their merits for reproducibility.
 The R package [`repro`](https://github.com/aaronpeikert/repro) wraps everyday tasks into composable building blocks.
-Our approach makes it easier to follow best practices by automatically configuring the needed tools. 
+[`repro`](https://github.com/aaronpeikert/repro) makes it easier to follow best practices by automatically configuring the needed tools. 
+Following reproducibility best practices removes friction from the collaboration of multiple analysts, which need to work together to tackle big data problems.
 
 
 ## Implications
