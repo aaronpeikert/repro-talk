@@ -42,7 +42,6 @@ The R package [`repro`](https://github.com/aaronpeikert/repro) wraps everyday ta
 [`repro`](https://github.com/aaronpeikert/repro) makes it easier to follow best practices by automatically configuring the needed tools. 
 Following reproducibility best practices removes friction from the collaboration of multiple analysts, which need to work together to tackle big data problems.
 
-
 ## Implications
 
 To meet the demands of reproducibility in big data, the research community must move to a structured and automated approach.
