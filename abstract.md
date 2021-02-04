@@ -32,7 +32,7 @@ We propose to adapt and apply tools in research contexts that were originally me
 
 <!-- yes I repeat myself, but if one point sticks it is hopefully the four pillars -->
 1. Software management with `Docker` ensures a stable software environment across changing computing environments -- even across thousands of nodes in distributed environments,
-2. dependency tracking with `Make` compose complex (pre-)processing pipelines,
+2. dependency tracking with `Make` composes complex (pre-)processing pipelines,
 3. dynamic document creation with `RMarkdown` helps to recreate results anytime, and
 4. version control with `Git` tracks snapshots of the analysis over time.
 
@@ -40,6 +40,7 @@ While these tools have proven to be effective, their origin in software engineer
 We believe a layer of abstraction may ease access to these tools and their merits for reproducibility.
 The R package [`repro`](https://github.com/aaronpeikert/repro) wraps everyday tasks into composable building blocks.
 Our approach makes it easier to follow best practices by automatically configuring the needed tools. 
+
 
 ## Implications
 
