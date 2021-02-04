@@ -40,11 +40,9 @@ While these tools have proven to be effective, their origin in software engineer
 We believe a layer of abstraction may ease access to these tools and their merits for reproducibility.
 The R package [`repro`](https://github.com/aaronpeikert/repro) wraps everyday tasks into composable building blocks.
 [`repro`](https://github.com/aaronpeikert/repro) makes it easier to follow best practices by automatically configuring the needed tools. 
-Following reproducibility best practices removes friction from the collaboration of multiple analysts, which need to work together to tackle big data problems.
+
 
 ## Implications
 
 To meet the demands of reproducibility in big data, the research community must move to a structured and automated approach.
-This will require researchers to adopt new tools and workflows.
-Therefore, widespread adoption of best practices needs easier to use tooling and more emphasis on education.
-This investment upfront will pay for itself through more robust analyses that scale better, are well structured, and allow future users to recreate past results.
+This will require researchers to adopt new tools and workflows. This investment upfront will pay for itself through more robust analyses that scale better, are well structured, and allow future users to recreate past results. Last, following the proposed best practices of reproducibility has benefits for collaboration of multiple authors on a single analysis.
