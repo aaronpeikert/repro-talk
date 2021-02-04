@@ -45,4 +45,6 @@ The R package [`repro`](https://github.com/aaronpeikert/repro) wraps everyday ta
 ## Implications
 
 To meet the demands of reproducibility in big data, the research community must move to a structured and automated approach.
-This will require researchers to adopt new tools and workflows. This investment upfront will pay for itself through more robust analyses that scale better, are well structured, and allow future users to recreate past results. Last, following the proposed best practices of reproducibility has benefits for collaboration of multiple authors on a single analysis.
+This will require researchers to adopt new tools and workflows.
+This investment upfront will pay for itself through more robust analyses that scale better, are well structured, and allow future users to recreate past results. 
+Last, following the proposed best practices of reproducibility has benefits for collaboration of multiple authors on a single analysis.
