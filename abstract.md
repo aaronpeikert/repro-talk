@@ -10,7 +10,7 @@ https://www.conference-service.com/ressyn-bigdata/xpage.html?xpage=234&lang=en
 -->
 The rules of "good scientific practice" mandate that a research artefact is reproducible.
 Reproducibility is ensured if the same results can be obtained with the same data from the same analysis.
-Big data applications particularly are threatened by non-reproducibility because data often come from multiple sources, are large and messy and preprocessing may rely on multiple software packages.
+Big data applications particularly are threatened by non-reproducibility because data often come from multiple sources, are large and messy, and preprocessing may rely on multiple software packages.
 Then, it becomes increasingly difficult to track and document all steps of an analysis pipeline and guarantee their reproducibility.
 
 ## Objectives
