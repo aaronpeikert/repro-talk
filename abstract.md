@@ -23,8 +23,8 @@ Four concepts are necessary to meet these demands:
 
 1. Software management allows for distributed computing,
 2. dependency tracking coordinates the data flow,
-3. dynamic document creation keeps the results consistent and up-to-date,
-4. and version control to track changes over time
+3. dynamic document creation keeps the results consistent and up-to-date, and
+4. version control to track changes over time
 
 ## Approach
 
