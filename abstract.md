@@ -17,7 +17,7 @@ Then, it becomes increasingly difficult to track and document all steps of an an
 ## Objectives
 
 <!-- combine the defining criteria of big data: Volume, Velocity, and Variety with the four pillars of reproducibility--> 
-Big data are typically characterised by volume, variety, and velocity. Increased volume implies the need for distributed computing, while the variety of data sources require us to pay close attention to how data objects flow through our analysis, and velocity forces our results to update dynamically.
+Big data are typically characterised by volume, variety, and velocity. Increased volume implies the need for distributed computing. Variety of data sources requires us to pay close attention to how data objects flow through our analysis. Velocity demands from our results to be updated dynamically.
 Reproduction in times of big data can hence no longer be a manual task for human researchers but must be executed by computers.
 Four concepts are necessary to meet these demands:
 
