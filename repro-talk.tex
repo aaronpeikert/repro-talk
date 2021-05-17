@@ -13,14 +13,15 @@
 
 % title info
 
-\title{Automating Reproducibility}
+\title{Reproducibility in Big Data with the repro package}
 \subtitle{A Reproducible Data Analysis Workflow with RMarkdown, Git, Make, and Docker}
-\author{\href{https://github.com/aaronpeikert/}{Aaron Peikert\textsuperscript{1,2}\\}}
+\author{\href{https://github.com/aaronpeikert/}{Aaron Peikert\textsuperscript{1}}, Andreas M. Brandmaier\textsuperscript{1,2}}
 \institute{
-\textsuperscript{1}Max Planck Institute of Human Development\\
-\textsuperscript{2}Humboldt{\textendash}Universität zu Berlin\\
+\textsuperscript{1}Center for Lifespan Psychology---Max Planck Institute for Human Development, Berlin, Germany\\
+\textsuperscript{2}Max Planck UCL Centre for Computational Psychiatry and Ageing Research, Berlin, Germany and London, UK
 }
 \date{
+18.05.2021 - ressyn-bigdata - virtual conference
 \scriptsize {\lolit Slides:} \href{https://github.com/aaronpeikert/repro-talk}{\tt \scriptsize
   \color{foreground} https://github.com/aaronpeikert/repro-talk}
 }
@@ -60,7 +61,7 @@ Scientific claims should not be credible because of their originators' authority
   \large
   \textcolor<2>{lolit}{``Insanity is doing the same thing over and over again and expecting different results."}
   \end{center}
-  \textcolor<2>{lolit}{\hfill {\textendash} Albert Einstein}\\
+  \textcolor<2>{lolit}{\hfill {\textendash} Albert Einstein (disputed)}\\
   \onslide<2>{
   \begin{center}
   As it turns out, doing the\\
@@ -76,6 +77,14 @@ Four different problems are all to common:\\
 	\onslide<2->\textcolor<3->{lolit}{2. Copy-and-paste errors}\\
 	\onslide<3->\textcolor<4->{lolit}{3. Ambiguous order of code execution}\\
 	\onslide<4->4. Broken dependencies\\
+\end{frame}
+
+\begin{frame}[c]{Big Data\textemdash{}Bigger Problems?}
+  \begin{itemize}
+  \item Volume uses more computing resources
+  \item Velocity requires better scalability
+  \item Variety needs more robust code
+  \end{itemize}
 \end{frame}
 
 \begin{frame}[c]{Lessons from software engeniering}
@@ -130,6 +139,7 @@ Four solutions:
 		\begin{itemize}
 			\item reuse
 			\item easier collaboration
+			\item trouble (during review, questions after publication, etc.)
 		\end{itemize}
 	}
 	\only<2>{
@@ -179,11 +189,14 @@ Four solutions:
 Make is a ``recipe" language that describes how files depend on each other and how to resolve these dependencies.
 \vspace{10mm}
 \begin{lstlisting}[language=make,basicstyle=\ttfamily\scriptsize]
-cfcs-example.pdf: cfcs-example.Rmd data/CFCS.csv
-  $(run) Rscript -e 'rmarkdown::render("$(current_dir)/$<")'
+spaghetti_arrabiata.pdf: spagetti_arrabiata.Rmd arrabiata_sauce.csv pasta.csv
+    Rscript -e 'rmarkdown::render("spaghetti_arrabiata.Rmd")'
 
-data/CFCS.csv: R/00load_data.R
-  $(run) Rscript -e 'source("$(current_dir)/$<")'
+pasta.csv: cook_pasta.R
+    Rscript -e 'source("cook_pasta.R")'
+
+arrabiata_sauce.csv: cook_sauce.R canned_tomatoes.csv
+    Rscript -e 'source("cook_sauce.R")'
 \end{lstlisting}
 \end{frame}
 
@@ -199,6 +212,12 @@ RUN install2.r --error --skipinstalled\
 WORKDIR /home/rstudio
 \end{lstlisting}
 \end{frame}
+
+  \usebackgroundtemplate{\includegraphics[width=\paperwidth]{Figs/nutshell.pdf}}
+  \begin{frame}[plain, c]
+ 
+  \end{frame}
+}
 
 \begin{frame}[c]{Advantages}
 	\begin{center}

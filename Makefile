@@ -6,7 +6,7 @@ bright: $(STEM)_bright.pdf
 clean:
 	Ruby/clean.rb
 
-$(STEM).pdf: $(STEM).tex header.tex Figs
+$(STEM).pdf: $(STEM).tex header.tex Figs Figs/nutshell.pdf
 	xelatex $<
 
 $(STEM)_withnotes.pdf: $(STEM)_withnotes.tex header.tex Figs
@@ -22,3 +22,6 @@ $(STEM)_bright.pdf: $(STEM)_bright.tex header.tex Figs
 
 $(STEM)_bright.tex: $(STEM).tex Ruby/createVersionInBright.rb
 	Ruby/createVersionInBright.rb $(STEM).tex $(STEM)_bright.tex
+
+Figs/nutshell.pdf:
+	wget -O $@ https://github.com/aaronpeikert/reproducible-research/raw/master/Images/nutshell.pdf
