@@ -42,6 +42,19 @@
     Source: {\tt https://github.com/aaronpeikert/repro-talk}
 }}
 }
+\begin{frame}[c]{Why do we trust science?}
+Scientific claims should not be credible because of their originators' authority but by the \textcolor{hilit}{transparency} and \textcolor{vhilit}{replicability} of their supporting evidence.
+\end{frame}
+
+\begin{frame}{Reproduction ≠ Replication}
+  \includegraphics<1>[width=\textwidth]{Figs/replication-vs-reproduction1.pdf}
+  \includegraphics<2>[width=\textwidth]{Figs/replication-vs-reproduction2.pdf}
+  \onslide<2>{
+    \textcolor{vhilit}{Replication} can not be automated, but
+    \textcolor{hilit}{reproducibility} can and should be automated.
+  }
+\end{frame}
+
 \begin{frame}[c]
   \begin{center}
   \large
@@ -54,34 +67,61 @@
     \textcolor{hilit}{{\large same thing}}\\
   is pretty complicated.
 \end{center}}
-
 \end{frame}
-\begin{frame}[c]{Reproduction ≠ Replication}
-  If everything is already there:
-\begin{itemize}
-  \item published paper
-  \item data originally used
-  \item code originally used
-\end{itemize}
-\onslide<2->{Shouldn't that be enough for \textcolor<2>{vhilit}{Reproducibility}? }\onslide<3>{\textcolor{hilit}{Unlikely.}}
-\end{frame}
-{
-  \usebackgroundtemplate{\includegraphics[width=\paperwidth]{Figs/ikea.png}}
-  \begin{frame}[plain]
-  \end{frame}
-}
 
-\begin{frame}[c]{Problems}
-	\onslide<1->\textcolor<2->{lolit}{How do I generate this plot, table, result?}\\
-	\onslide<2->\textcolor<3->{lolit}{Is this the correct version of the data and code?}\\
-	\onslide<3->\textcolor<4->{lolit}{How do I run this code? Do I have all files neccesary?}\\
-	\onslide<4>What software/packages do I need and how do I install them?
+\begin{frame}[c]{Why do I mistrust supplementary code?}
+Four different problems are all to common:\\
+\vspace{5mm}
+	\onslide<1->\textcolor<2->{lolit}{1. Multiple inconsistent versions of code and data}\\
+	\onslide<2->\textcolor<3->{lolit}{2. Copy-and-paste errors}\\
+	\onslide<3->\textcolor<4->{lolit}{3. Ambiguous order of code execution}\\
+	\onslide<4->4. Broken dependencies\\
+\end{frame}
+
+\begin{frame}[c]{Lessons from software engeniering}
+Four solutions:
+  \begin{enumerate}
+    \item Version control
+    \item Dynamic document creation
+    \item Dependency tracking
+    \item Software management
+  \end{enumerate}
+	\vfill
+	\textcolor{lolit}{\tiny Peikert, A., \& Brandmaier, A. M. (2021). A Reproducible Data Analysis Workflow. \textit{Quantitative and Computational Methods in Behavioral Sciences, 1, Article e3763.} https://doi.org/10.5964/qcmb.3763}
 \end{frame}
 
 \begin{frame}[c]{Specify Everything}
   The relations between\\
-  \textcolor<2>{hilit}{code}, \textcolor<2>{hilit}{data}, \textcolor<2>{hilit}{results} and their \textcolor<2>{hilit}{environment}\\
-  need to be \textcolor<2>{vhilit}{unambiguously} specified.
+  \textcolor{hilit}{code}, \textcolor{hilit}{data}, \textcolor{hilit}{results} and their \textcolor{hilit}{environment}\\
+  need to be \textcolor{vhilit}{unambiguously} specified.
+\end{frame}
+
+\begin{frame}[c]{Lessons from software engeniering}
+Four solutions:
+  \begin{enumerate}
+    \item \textcolor{vhilit}{Version control}
+    \item \textcolor{vhilit}{Dynamic document creation}
+    \item \textcolor{hilit}{Dependency tracking}
+    \item \textcolor{hilit}{Software management}
+  \end{enumerate}
+  \hfill \includegraphics[width=5cm]{Figs/time-vs-machine.pdf}
+
+\end{frame}
+
+\begin{frame}[c]{Tools for R Users}
+	In the R Universe and beyond, the most flexible tools are:
+  \begin{itemize}
+    \item literate programming = RMarkdown*
+    \item version control = Git**
+    \item dependency management = Make**
+    \item containerization = Docker**
+  \end{itemize}
+  \vfill
+  \textcolor{lolit}{
+	* RMarkdown supports more then 40 languages e.g.:\\
+	\hspace{10mm}Python, Julia, SAS, Scala \& Octave\\
+	** Language agnostic
+	}
 \end{frame}
 
 \begin{frame}[c]{Why should I care?}
@@ -98,35 +138,6 @@
 			\item reproducibility is a precondition for replication
 			\item increases transparency and (longterm) accessibility
 		\end{itemize}
-	}
-\end{frame}
-
-
-\begin{frame}[c]{Lessons from software engeniering}
-  \begin{itemize}
-    \item Code \textemdash{} document = dynamic document generation
-    \item Code version \textemdash{} data version = version control
-    \item Code \textemdash{} interim results = dependency management
-    \item Code \textemdash{} execution environment = containerization
-  \end{itemize}
-	\vfill
-	\textcolor{lolit}{\tiny Peikert, A., \& Brandmaier, A. M. (2019). A Reproducible Data Analysis Workflow with R Markdown,
-Git, Make, and Docker [Preprint].PsyArXiv. https://doi.org/10.31234/osf.io/8xzqy}
-\end{frame}
-
-\begin{frame}[c]{Tools for R Users}
-	In the R Universe and beyond, the most flexible tools are:
-  \begin{itemize}
-    \item literate programming = RMarkdown*
-    \item version control = Git**
-    \item dependency management = Make**
-    \item containerization = Docker**
-  \end{itemize}
-  \vfill
-  \textcolor{lolit}{
-	* RMarkdown supports more then 40 languages e.g.:\\
-	\hspace{10mm}Python, Julia, SAS, Scala \& Octave\\
-	** Language agnostic
 	}
 \end{frame}
 
@@ -163,7 +174,7 @@ Git, Make, and Docker [Preprint].PsyArXiv. https://doi.org/10.31234/osf.io/8xzqy
   publication.
 \end{frame}
 
-\begin{frame}[c, fragile]{Make\textemdash{}Dependency Management}
+\begin{frame}[c, fragile]{Make\textemdash{}Dependency Tracking}
 
 Make is a ``recipe" language that describes how files depend on each other and how to resolve these dependencies.
 \vspace{10mm}
@@ -214,6 +225,47 @@ WORKDIR /home/rstudio
 \end{itemize}
 \end{frame}
 
+\begin{frame}[c]{Focus: Computing infrastructure}
+	\centering
+	\onslide<1-2>{\textcolor{vhilit}{Dependency tracking} + \textcolor{hilit}{software management\\}}
+	\onslide<2>{=\\}
+	\onslide<2->{distributed computation\\}
+	\only<2>{\textcolor{vhilit}{\vspace{5mm}Dependency tracking} enables intelligent task scheduling\\
+	\textcolor{hilit}{Software management} guarantees compatible software environment}
+	\onslide<3->{on\\}
+	\only<3>{Cloud Computing infrastructure\\}
+	\only<4>{High Performance Computing cluster (HPC)\\}
+\end{frame}
+
+\begin{frame}[c]{HPC\textemdash{}Container}
+  \begin{itemize}
+  \item repro supports Singularity as a Docker alternative
+  \item developing environment matches HPC environment exactly
+  \item full freedome to use any software, even when not supported by HPC admin
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[c]{HPC\textemdash{}Dependency tracking}
+  making dependencies between tasks explicit enables:
+  \begin{itemize}
+  \item intelligent caching
+  \item automatic parralelization
+  \item dynamic job scheduling
+  \end{itemize}
+  \vspace{5mm}
+  Make is well supported by several job schedulers.\\
+  \vspace{5mm}
+  Pure R solutions like the packages \textcolor{vhilit}{targets} + \textcolor{hilit}{futureverse} offer even more convinience and are compatible with repro
+\end{frame}
+
+\begin{frame}[c]{Focus: Modularity}
+\begin{itemize}
+	\item<1-> repro is a modular system
+	\item<2-> potential integration of other workflows\\
+	\item<3-> ``Lego system of reproducibility tools"
+\end{itemize}
+\end{frame}
+
 \begin{frame}[c]{Focus: Longterm Archive}
 	\textcolor<2>{lolit}{All software is bundled into the container, therefore all we need is:}
 	\begin{itemize}
@@ -226,26 +278,6 @@ WORKDIR /home/rstudio
 	Containers can be converted into a full system image ensuring support for decades.
 	}
 
-\end{frame}
-
-\begin{frame}[c]{Focus: Computing infrastructure}
-	\centering
-	\onslide<1-2>{Dependency management + containerization\\}
-	\onslide<2>{=\\}
-	\onslide<2->{\textcolor<5->{lolit}{distributed computation\\}}
-	\onslide<3->{\textcolor<5->{lolit}{on\\}}
-	\only<3>{\textcolor{hilit}{High Performance Computing cluster\\}}
-	\only<4->{\textcolor<4>{vhilit}{\textcolor<5->{lolit}{Cloud Computing infrastructure\\}}}
-	\onslide<5->{\textcolor<5->{lolit}{=\\}}
-	\onslide<5->{Upon change, the manuscript is rerendered assuring reproducibility.}
-\end{frame}
-
-\begin{frame}[c]{Focus: Modularity}
-\begin{itemize}
-	\item<1-> repro is a modular system
-	\item<2-> potential integration of other workflows\\
-	\item<3-> ``Lego system of reproducibility tools"
-\end{itemize}
 \end{frame}
 
 
