@@ -36,7 +36,7 @@
 \frame{
   \titlepage
 
-  \vfill \hfill \includegraphics[height=6mm]{Figs/cc-zero.png} \vspace*{-1cm}
+  \vfill \hfill \includegraphics[height=6mm]{Figs/cc-zero.png} 
 
   \note{These Slides are for a medium length talk (30min) meant as an introduction to a reproducible research workflow.
 
@@ -48,8 +48,10 @@ Scientific claims should not be credible because of their originators' authority
 \end{frame}
 
 \begin{frame}{Reproduction ≠ Replication}
+  \vspace{1cm}
   \includegraphics<1>[width=\textwidth]{Figs/replication-vs-reproduction1.pdf}
   \includegraphics<2>[width=\textwidth]{Figs/replication-vs-reproduction2.pdf}
+  \includegraphics<3>[width=\textwidth]{Figs/replication-vs-reproduction3.pdf}
   \onslide<2>{
     \textcolor{vhilit}{Replication} can not be automated, but
     \textcolor{hilit}{reproducibility} can and should be automated.
@@ -105,6 +107,24 @@ Four solutions:
   need to be \textcolor{vhilit}{unambiguously} specified.
 \end{frame}
 
+\begin{frame}[c]{Why should I care?}
+	\only<1>{
+		Productivity:
+		\begin{itemize}
+			\item reuse
+			\item easier collaboration
+			\item avoid trouble (during review, questions after publication, etc.)
+		\end{itemize}
+	}
+	\only<2>{
+	Good scientific practice:
+		\begin{itemize}
+			\item reproducibility is a precondition for replication
+			\item increases transparency and (longterm) accessibility
+		\end{itemize}
+	}
+\end{frame}
+
 \begin{frame}[c]{Lessons from software engeniering}
 Four solutions:
   \begin{enumerate}
@@ -120,34 +140,16 @@ Four solutions:
 \begin{frame}[c]{Tools for R Users}
 	In the R Universe and beyond, the most flexible tools are:
   \begin{itemize}
-    \item literate programming = RMarkdown*
-    \item version control = Git**
-    \item dependency management = Make**
-    \item containerization = Docker**
+    \item Dynamic document creation = RMarkdown*
+    \item Version control = Git**
+    \item Dependency tracking = Make**
+    \item Software management = Docker**
   \end{itemize}
   \vfill
   \textcolor{lolit}{
 	* RMarkdown supports more then 40 languages e.g.:\\
 	\hspace{10mm}Python, Julia, SAS, Scala \& Octave\\
 	** Language agnostic
-	}
-\end{frame}
-
-\begin{frame}[c]{Why should I care?}
-	\only<1>{
-		Productivity:
-		\begin{itemize}
-			\item reuse
-			\item easier collaboration
-			\item trouble (during review, questions after publication, etc.)
-		\end{itemize}
-	}
-	\only<2>{
-	Good scientific practice:
-		\begin{itemize}
-			\item reproducibility is a precondition for replication
-			\item increases transparency and (longterm) accessibility
-		\end{itemize}
 	}
 \end{frame}
 
@@ -214,8 +216,9 @@ WORKDIR /home/rstudio
 \end{frame}
 
   \usebackgroundtemplate{\includegraphics[width=\paperwidth]{Figs/nutshell.pdf}}
-  \begin{frame}[plain, c]
- 
+  \begin{frame}[plain]
+  \vspace{8cm}
+  \scriptsize \hfill{}\textcolor{black}{From Peikert \& Brandmaier (2019) under CC-BY4.0}
   \end{frame}
 }
 
@@ -228,12 +231,20 @@ WORKDIR /home/rstudio
 	\end{center}
 \end{frame}
 
-\begin{frame}[c]{Simplifying the tools}
-
+\begin{frame}[c, fragile]{Simplifying the tools}
 \textcolor<2->{lolit}{These tools require extensive training and need much time to configure correctly.\\}
-\onslide<2->\textcolor<3->{lolit}{The R package 'repro' abstracts away the concrete technical implementation:\\}
-\onslide<3->{\centering \Huge Live Demo}
-
+\onslide<2->The R package 'repro' abstracts away the concrete technical implementation:\\
+\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+repro:
+  packages:
+    - ggplot2
+    - aaronpeikert/repro@adb5fa569
+  scripts:
+    - R/clean.R
+  data:
+    mycars: data/mtcars.csvrepro:
+\end{lstlisting}
+The function \lstinline|repro::automate()| automatically infers Docker- and Makefile.
 \end{frame}
 
 \begin{frame}[c]{Disadvantages}
@@ -246,9 +257,9 @@ WORKDIR /home/rstudio
 
 \begin{frame}[c]{Focus: Computing infrastructure}
 	\centering
-	\onslide<1-2>{\textcolor{vhilit}{Dependency tracking} + \textcolor{hilit}{software management\\}}
-	\onslide<2>{=\\}
-	\onslide<2->{distributed computation\\}
+	\onslide<1>{\textcolor{vhilit}{Dependency tracking} + \textcolor{hilit}{software management\\}}
+	\onslide<1>{=\\}
+	\onslide<1->{distributed computation\\}
 	\only<2>{\textcolor{vhilit}{\vspace{5mm}Dependency tracking} enables intelligent task scheduling\\
 	\textcolor{hilit}{Software management} guarantees compatible software environment}
 	\onslide<3->{on\\}
