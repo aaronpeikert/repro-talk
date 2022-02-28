@@ -1,52 +1,15 @@
 ---
-title: "Reproducibility in Big Data with the repro package"
+title: "Automating Reproduciblility --- Challenges and what it takes to meet them"
 author: "Peikert, Aaron and Brandmaier, Andreas M."
 ---
 
-## Background
-<!-- this abstract should be between 350 and 1000 words-->
-<!-- useful links:
-https://www.conference-service.com/ressyn-bigdata/xpage.html?xpage=237&lang=en
-https://www.conference-service.com/ressyn-bigdata/xpage.html?xpage=234&lang=en
--->
-The rules of "good scientific practice" mandate that a research artefact is reproducible.
-Reproducibility is ensured if the same results can be obtained with the same data from the same analysis.
-Big data applications are threatened by non-reproducibility because data often come from multiple sources, are large and messy, and preprocessing may rely on various software packages.
-Then, it becomes increasingly difficult to track and document all steps of an analysis pipeline and guarantee their reproducibility.
+# Automating Reproduciblility --- Challenges and what it takes to meet them
 
-## Objectives
-
-<!-- combine the defining criteria of big data: Volume, Velocity, and Variety with the four pillars of reproducibility--> 
-Big data are typically characterised by volume, variety, and velocity. Increased volume implies the need for distributed computing.
-Variety of data sources requires us to pay close attention to how data objects flow through our analysis.
-Velocity demands from our results to be updated dynamically.
-Reproduction in times of big data can hence no longer be a manual task for human researchers but must be supported by computer tools.
-Four concepts are necessary to meet these demands:
-
-1. Software management allows for distributed computing,
-2. dependency tracking coordinates the data flow,
-3. dynamic document creation keeps the results consistent and up-to-date, and
-4. version control to track changes over time
-
-## Approach
-
-Increasing the degree of automation is crucial to ensure reproducibility in big data applications.
-We propose to adapt and apply tools in research contexts that were originally meant for software development:
-
-<!-- yes I repeat myself, but if one point sticks it is hopefully the four pillars -->
-1. Software management with `Docker` ensures a stable software environment across changing computing environments---even across thousands of nodes in distributed environments,
-2. dependency tracking with `Make` documents and automates complex processing pipelines,
-3. dynamic document creation with `RMarkdown` helps to recreate manuscripts describing results, and
-4. version control with `Git` tracks snapshots of the analysis workflow over time.
-
-While these tools have proven to be effective, their origin in software engineering requires a steep learning curve for researchers, who are typically not trained in using them.
-We believe a layer of abstraction may ease access to these tools and their merits for reproducibility.
-The R package [`repro`](https://github.com/aaronpeikert/repro) wraps everyday tasks into composable building blocks.
-[`repro`](https://github.com/aaronpeikert/repro) makes it easier to follow best practices by automatically configuring the needed tools. 
-
-## Implications
-
-To meet the demands of reproducibility in big data, the research community must move to a structured and automated approach.
-This will require researchers to adopt new tools and workflows.
-This investment upfront will pay for itself through more robust analyses that scale better, are well structured, and allow future users to recreate past results. 
-Last, following the proposed best practices of reproducibility has benefits for collaboration of multiple authors on a single analysis.
+<!--more exciting to start with the problem-->
+Computational reproducibility is the ability to obtain identical results from the same data with the same computer code.
+It is a building block for transparent and cumulative science because it enables the originator and other researchers, on other computers and later in time, to reproduce and thus understand how results came about while avoiding various errors that may lead to erroneous reporting of statistical and computational results.
+But what does it take to make something reproducible?
+Until recently, detailed descriptions of methods and analyses were the primary instrument for ensuring scientific reproducibility.
+Such manual description has four shortcomings that get more pronounced the more central computational methods are for research.
+We propose that researchers take advantage of technological advancements---version control, dynamic document generation, workflow automation, and containerization---to meet these challenges.
+Our workflow enables scientists to achieve a more comprehensive standard that allows anyone to access a digital research repository and reproduce all computational steps from raw data to final report, including all relevant statistical analyses, with a single command.
