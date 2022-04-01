@@ -13,7 +13,7 @@
 
 % title info
 
-\title{Reproducibility in Big Data with the repro package}
+\title{Automating Reproducibility}
 \subtitle{A Reproducible Data Analysis Workflow with RMarkdown, Git, Make, and Docker}
 \author{\href{https://github.com/aaronpeikert/}{Aaron Peikert\textsuperscript{1}}, Andreas M. Brandmaier\textsuperscript{1,2}}
 \institute{
@@ -81,20 +81,12 @@ Four different problems are all to common:\\
 	\onslide<4->4. Broken dependencies\\
 \end{frame}
 
-\begin{frame}[c]{Big Data\textemdash{}Bigger Problems?}
-  \begin{itemize}
-  \item Volume uses more computing resources
-  \item Velocity requires better scalability
-  \item Variety needs more robust code
-  \end{itemize}
-\end{frame}
-
 \begin{frame}[c]{Lessons from software engeniering}
 Four solutions:
   \begin{enumerate}
     \item Version control
     \item Dynamic document creation
-    \item Dependency tracking
+    \item Workflow management
     \item Software management
   \end{enumerate}
 	\vfill
@@ -130,7 +122,7 @@ Four solutions:
   \begin{enumerate}
     \item \textcolor{vhilit}{Version control}
     \item \textcolor{vhilit}{Dynamic document creation}
-    \item \textcolor{hilit}{Dependency tracking}
+    \item \textcolor{hilit}{Workflow management}
     \item \textcolor{hilit}{Software management}
   \end{enumerate}
   \hfill \includegraphics[width=5cm]{Figs/time-vs-machine.pdf}
@@ -142,7 +134,7 @@ Four solutions:
   \begin{itemize}
     \item Dynamic document creation = RMarkdown*
     \item Version control = Git**
-    \item Dependency tracking = Make**
+    \item Workflow management = Make**
     \item Software management = Docker**
   \end{itemize}
   \vfill
@@ -186,7 +178,7 @@ Four solutions:
   publication.
 \end{frame}
 
-\begin{frame}[c, fragile]{Make\textemdash{}Dependency Tracking}
+\begin{frame}[c, fragile]{Make\textemdash{}Workflow management}
 
 Make is a ``recipe" language that describes how files depend on each other and how to resolve these dependencies.
 \vspace{10mm}
@@ -257,10 +249,10 @@ The function \lstinline|repro::automate()| automatically infers Docker- and Make
 
 \begin{frame}[c]{Focus: Computing infrastructure}
 	\centering
-	\onslide<1>{\textcolor{vhilit}{Dependency tracking} + \textcolor{hilit}{software management\\}}
+	\onslide<1>{\textcolor{vhilit}{Workflow management} + \textcolor{hilit}{software management\\}}
 	\onslide<1>{=\\}
 	\onslide<1->{distributed computation\\}
-	\only<2>{\textcolor{vhilit}{\vspace{5mm}Dependency tracking} enables intelligent task scheduling\\
+	\only<2>{\textcolor{vhilit}{\vspace{5mm}Workflow management} enables intelligent task scheduling\\
 	\textcolor{hilit}{Software management} guarantees compatible software environment}
 	\onslide<3->{on\\}
 	\only<3>{Cloud Computing infrastructure\\}
@@ -275,7 +267,7 @@ The function \lstinline|repro::automate()| automatically infers Docker- and Make
   \end{itemize}
 \end{frame}
 
-\begin{frame}[c]{HPC\textemdash{}Dependency tracking}
+\begin{frame}[c]{HPC\textemdash{}Workflow management}
   making dependencies between tasks explicit enables:
   \begin{itemize}
   \item intelligent caching
