@@ -3,7 +3,8 @@
 
 gitignore = File.open(".gitignore").readlines
 gitignore.each do |pattern|
-  files = Dir.glob(pattern.strip)
-  filesWithoutPDF = files.select{ |i| !i[/\.pdf$/] }
+  ignoredStuff = Dir.glob(pattern.strip)
+  ignoredFiles = ignoredStuff.select{ |i| File.file?(i) }
+  filesWithoutPDF = ignoredFiles.select{ |i| !i[/\.pdf$/] }
   filesWithoutPDF.each {|file| File.delete(file)}
 end
