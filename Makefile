@@ -24,4 +24,4 @@ $(STEM)_bright.tex: $(STEM).tex Ruby/createVersionInBright.rb
 	Ruby/createVersionInBright.rb $(STEM).tex $(STEM)_bright.tex
 
 Figs/nutshell.pdf:
-	wget -O $@ https://github.com/aaronpeikert/reproducible-research/raw/master/Images/nutshell.pdf
+	wget -O $@ https://github.com/aaronpeikert/repro-tutorial/raw/main/images/nutshell.pdf
