@@ -22,7 +22,7 @@
 \textsuperscript{3}Medical School Berlin, Berlin, Germany
 }
 \date{
-11.07.2022\\
+29.08.2022 | Marbach\\
 \scriptsize {\lolit Slides:} \href{https://github.com/aaronpeikert/repro-talk/releases}{\tt \scriptsize
   \color{foreground} https://github.com/aaronpeikert/repro-talk}
 }
@@ -190,8 +190,8 @@ Four solutions:
 Make is a ``recipe" language that describes how files depend on each other and how to resolve these dependencies.
 \vspace{10mm}
 \begin{lstlisting}[language=make,basicstyle=\ttfamily\scriptsize]
-spaghetti_arrabiata.pdf: spagetti_arrabiata.Rmd arrabiata_sauce.csv pasta.csv
-    Rscript -e 'rmarkdown::render("spaghetti_arrabiata.Rmd")'
+arrabiata.pdf: arrabiata.Rmd arrabiata_sauce.csv pasta.csv
+    Rscript -e 'rmarkdown::render("arrabiata.Rmd")'
 
 pasta.csv: cook_pasta.R
     Rscript -e 'source("cook_pasta.R")'
@@ -244,6 +244,12 @@ repro:
     mycars: data/mtcars.csvrepro:
 \end{lstlisting}
 The function \lstinline|repro::automate()| automatically infers Docker- and Makefile.
+\end{frame}
+
+\begin{frame}[c]
+  \Huge
+	\only<1>{Thank you}
+	\only<2>{Questions?}
 \end{frame}
 
 \begin{frame}[c]{Disadvantages}
@@ -338,12 +344,6 @@ The function \lstinline|repro::automate()| automatically infers Docker- and Make
 	\textcolor{lolit}{Slides:\\}\href{https://github.com/aaronpeikert/repro-talk}{\texttt{\textcolor{foreground}{https://github.com/aaronpeikert/repro-talk}}}
 	\textcolor{lolit}{Package:\\}\href{https://github.com/aaronpeikert/repro-thesis}{\texttt{\textcolor{foreground}{https://github.com/aaronpeikert/repro-thesis}}}\\
 	\textcolor{lolit}{Workflow:\\}\href{https://doi.org/10.31234/osf.io/8xzqy}{\texttt{\textcolor{foreground}{https://doi.org/10.31234/osf.io/8xzqy}}}
-\end{frame}
-
-\begin{frame}[c]
-  \Huge
-	\only<1>{Thank you}
-	\only<2>{Questions?}
 \end{frame}
 
 \end{document}
