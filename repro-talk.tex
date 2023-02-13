@@ -230,6 +230,20 @@ WORKDIR /home/rstudio
 	\end{center}
 \end{frame}
 
+\begin{frame}[c]
+  \Huge
+	\only<1>{Thank you}
+	\only<2>{Questions?}
+\end{frame}
+
+\begin{frame}[c]{Disadvantages}
+\begin{itemize}
+	\item requires complex software infrastructure
+	\item depends on for-profit services
+	\item diverges from the standard manuscript workflow
+\end{itemize}
+\end{frame}
+
 \begin{frame}[c, fragile]{Simplifying the tools}
 \textcolor<2->{lolit}{These tools require extensive training and need much time to configure correctly.\\}
 \onslide<2->The R package 'repro' abstracts away the concrete technical implementation:\\
@@ -244,20 +258,6 @@ repro:
     mycars: data/mtcars.csv
 \end{lstlisting}
 The function \lstinline|repro::automate()| automatically infers Docker- and Makefile.
-\end{frame}
-
-\begin{frame}[c]
-  \Huge
-	\only<1>{Thank you}
-	\only<2>{Questions?}
-\end{frame}
-
-\begin{frame}[c]{Disadvantages}
-\begin{itemize}
-	\item requires complex software infrastructure
-	\item depends on for-profit services
-	\item diverges from the standard manuscript workflow
-\end{itemize}
 \end{frame}
 
 \begin{frame}{Your melange may vary}
