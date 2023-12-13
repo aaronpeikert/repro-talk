@@ -14,7 +14,7 @@ format:
     include-in-header:
       - text: |
          <link rel = "shortcut icon" href = "https://www.mpg.de/favicon.ico" />
-    footer: ""
+    footer: "[Edit](https://github.com/aaronpeikert/repro-talk/edit/main/presentation.qmd)"
     html-math-method:
       method: mathjax
       url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg-full.js"
