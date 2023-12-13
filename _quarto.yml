@@ -1,3 +1,5 @@
 project:
+  type: website
   title: "slides-template"
   pre-render: minerva/decode.lua
+  output-dir: _publish/

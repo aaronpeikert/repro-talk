@@ -21,3 +21,4 @@ decoded.svg
 /.quarto/
 *.html
 .DS_Store
+_publish/
