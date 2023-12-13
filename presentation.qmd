@@ -278,7 +278,7 @@ make the inductive process repeatable on similar data.
 
 > For reproducibility, it really needs to be reproducible and checkable by a stranger with little time or energy to spare, because even the author will soon enough be that stranger.
 
-##
+## {data-background-color="#eeeeee"}
 
 ![](https://raw.githubusercontent.com/aaronpeikert/reproducible-research/master/Images/nutshell.svg)
 
