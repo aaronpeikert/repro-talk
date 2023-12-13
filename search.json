@@ -168,11 +168,25 @@
     "text": "Reproducibility + Preregistration + Replication\nenable\ntrustworthy inductive science"
   },
   {
+    "objectID": "presentation.html#now-you",
+    "href": "presentation.html#now-you",
+    "title": "Reproducible Research in R",
+    "section": "Now you!",
+    "text": "Now you!"
+  },
+  {
+    "objectID": "presentation.html#aaron-has-been-here.",
+    "href": "presentation.html#aaron-has-been-here.",
+    "title": "Reproducible Research in R",
+    "section": "Aaron has been here.",
+    "text": "Aaron has been here."
+  },
+  {
     "objectID": "presentation.html#summary",
     "href": "presentation.html#summary",
     "title": "Reproducible Research in R",
     "section": "Summary",
-    "text": "Summary\n\n\n\n\n%%{init: {'theme':'forest'}}%%\nflowchart LR\n\n  R(Reproducibility)\n  R --&gt; C(Collaboration)\n  R --&gt; X(Replication)\n  R --&gt; Y(Preregistration)\n  T(Trustworthy)\n\n  X --&gt; T\n  Y --&gt; T\n  C --&gt; Cu(Cumulative)\n  T --&gt; Cu\n  C --&gt; T"
+    "text": "Summary\n\n\n\n\n%%{init: {'theme':'forest'}}%%\nflowchart LR\n\n  R(Reproducibility)\n  R --&gt; C(Collaboration)\n  R --&gt; X(Replication)\n  R --&gt; Y(Preregistration)\n  T(Trustworthy)\n\n  X --&gt; T\n  Y --&gt; T\n  C --&gt; Cu(Cumulative)\n  T --&gt; Cu\n  C --&gt; T\n\n\n\n\n\n\n\nEdit"
   },
   {
     "objectID": "waiting.html#researchers-hate-him-discover-the-one-weird-trick-for-reproducing-studies-successfully.",
