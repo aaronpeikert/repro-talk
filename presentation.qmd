@@ -11,6 +11,9 @@ format:
       data-background-image: decoded.svg
       data-background-size: contain 
       data-background-opacity: ".1"
+    include-in-header:
+      - text: |
+         <link rel = "shortcut icon" href = "https://www.mpg.de/favicon.ico" />
 ---
 
 # Reproducibility {auto-animate="true"}

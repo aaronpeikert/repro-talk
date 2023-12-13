@@ -11,6 +11,9 @@ format:
     history: false
     controls: false
     menu: false
+    include-in-header:
+      - text: |
+         <link rel = "shortcut icon" href = "https://www.mpg.de/favicon.ico" />
 ---
 
 ## Researchers Hate Him! Discover the One Weird Trick for Reproducing Studies Successfully.  {transition="fade-in slide-out" .small .center onclick="window.location.href='presentation.html';"}
