@@ -296,18 +296,14 @@ make the inductive process repeatable on similar data.
 %%{init: {'theme':'forest'}}%%
 flowchart LR
 
-    R(Reproducibility)
-    R --> C(Collaboration)
-
-
+  R(Reproducibility)
+  R --> C(Collaboration)
   R --> X(Replication)
   R --> Y(Preregistration)
-  R --> Z(Replication)
   T(Trustworthy)
 
   X --> T
   Y --> T
-  Z --> T
   C --> Cu(Cumulative)
   T --> Cu
   C --> T
