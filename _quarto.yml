@@ -3,3 +3,4 @@ project:
   title: "slides-template"
   pre-render: minerva/decode.lua
   output-dir: _publish/
+  post-render: copy_index.lua
