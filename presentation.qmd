@@ -287,6 +287,13 @@ make the inductive process repeatable on similar data.
 
 > For reproducibility, it really needs to be reproducible and checkable by a stranger with little time or energy to spare, because even the author will soon enough be that stranger.
 
+[--- [Gwern Branwen](https://statmodeling.stat.columbia.edu/2023/10/29/simulations-of-measurement-error-and-the-replication-crisis-maybe-loken-and-i-have-a-mistake-in-our-paper/#comment-2278039)]{.scriptsize}
+
+## Now you!
+
+## Aaron has been here.
+
+
 ## {data-background-color="#eeeeee"}
 
 ![](https://raw.githubusercontent.com/aaronpeikert/reproducible-research/master/Images/nutshell.svg)
