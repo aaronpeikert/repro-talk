@@ -582,18 +582,14 @@ C_p = \frac{\sum_{i=1}^n(\hat{y}_i - y_i)^2}{\sigma^2_e} - 3n + 2df
 <pre class="mermaid mermaid-js">%%{init: {'theme':'forest'}}%%
 flowchart LR
 
-    R(Reproducibility)
-    R --&gt; C(Collaboration)
-
-
+  R(Reproducibility)
+  R --&gt; C(Collaboration)
   R --&gt; X(Replication)
   R --&gt; Y(Preregistration)
-  R --&gt; Z(Replication)
   T(Trustworthy)
 
   X --&gt; T
   Y --&gt; T
-  Z --&gt; T
   C --&gt; Cu(Cumulative)
   T --&gt; Cu
   C --&gt; T
