@@ -1,10 +1,3 @@
----
-title: "Automating Reproduciblility"
-subtitle: "Challenges and what it takes to meet them"
-author: "Aaron Peikert, Maximilian S. Ernst, and Andreas M. Brandmaier"
-output: pdf_document
----
-
 Computational reproducibility is a building block for transparent and cumulative science.
 It enables the originator and other researchers, on other computers and later in time, to reproduce and thus understand how results came about while avoiding various errors that may lead to erroneous reporting of statistical and computational results.
 But what does it take to make something reproducible?
