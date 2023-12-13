@@ -1,0 +1,126 @@
+/*-- scss:dark-version --*/
+
+// Importing fonts
+@import url('https://fontlibrary.org//face/libertinus-sans');
+@import url('https://fontlibrary.org//face/libertinus-serif');
+
+// fonts
+$font-family-sans-serif: "LibertinusSansRegular", sans-serif !default;
+$font-family-serif: "LibertinusSerifDisplayRegular", serif !default;
+
+// colors for dark theme
+$body-bg: #005555 !default; // Dark Green for background
+$body-color: #eeeeee !default; // Very Light Gray for body text
+$link-color: #ef7c00 !default; // Bright Orange for links
+$selection-bg: #c6d325 !default; // Lime Green for selections
+
+// headings
+$presentation-heading-font: $font-family-serif !default;
+$presentation-heading-color: #ffffff !default; // White for headings
+
+/* Additional Colors */
+$text-muted: lighten(#eeeeee, 50%) !default; // Lighter shade of body text color
+$link-color-hover: lighten(#ef7c00, 15%) !default; // Lighter shade of orange color for hover effect
+$selection-color: #005555 !default; // Dark Green, same as the background
+$dark-bg-text-color: #eeeeee !default; // White for text on dark background
+$dark-bg-link-color: #42affa !default; // A variation of bright blue for links on dark background
+$dark-bg-code-color: #00b1ea !default; // Bright Cyan for code on dark background
+
+$mermaid-bg-color: $body-bg;
+$mermaid-edge-color: $text-muted;
+$mermaid-node-fg-color: $body-color;
+$mermaid-fg-color: $body-color;
+$mermaid-fg-color--lighter: lighten($body-color, 10%);
+$mermaid-fg-color--lightest: lighten($body-color, 20%);
+$mermaid-font-family: $font-family-sans-serif;
+$mermaid-label-bg-color: $body-bg;
+$mermaid-label-fg-color: $text-muted;
+
+/*-- scss:rules --*/
+
+.reveal a {
+  line-height: 1.3em;
+  font-family: $font-family-sans-serif;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+  font-family: $presentation-heading-font;
+}
+
+#title-slide {
+  h1 {
+    font-size: 2em; /* Adjust the size as needed */
+  }
+}
+
+.highlight {
+  color: #ef7c00 !important;
+}
+
+.tinitiny {
+  font-size: 20%; /* Smaller than the default size */
+}
+
+.tiny {
+  font-size: 40%; /* Smaller than the default size */
+}
+
+.scriptsize {
+  font-size: 60%; /* Slightly smaller than the default size */
+}
+
+.small {
+  font-size: 70%; /* Small but readable */
+}
+
+.normalsize {
+  font-size: 100%; /* Default size */
+}
+
+.large {
+  font-size: 120%; /* Slightly larger than the default */
+}
+
+.Large {
+  font-size: 150%; /* Noticeably larger than the default */
+}
+
+.LARGE {
+  font-size: 180%; /* Quite large */
+}
+
+.huge {
+  font-size: 210%; /* Very large */
+}
+
+.Huge {
+  font-size: 250%; /* Extremely large */
+}
+
+.fill25 {
+  background: linear-gradient(to top, #ef7c00 33%, rgba(255, 255, 255, 0.1) 33%);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fill50 {
+  background: linear-gradient(to top, #ef7c00 50%, rgba(255, 255, 255, 0.1) 50%);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fill75 {
+  background: linear-gradient(to top, #ef7c00 66%, rgba(255, 255, 255, 0.1) 66%);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.center, .LARGE.center, .fill50.center {
+  text-align: center !important;
+}

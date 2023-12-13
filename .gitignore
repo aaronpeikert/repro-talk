@@ -12,3 +12,12 @@
 *.pdfpc
 .Rproj.user
 *.html
+
+/.quarto/
+.quarto/
+*_files/
+minerva.svg
+decoded.svg
+/.quarto/
+*.html
+.DS_Store

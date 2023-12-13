@@ -1,0 +1,22 @@
+---
+format:
+  revealjs: 
+    theme: [default, mpi.scss]
+    loop: true
+    shuffle: true
+    autoSlide: 5000
+    autoSlideStoppable: false
+    transitionSpeed: "slow"
+    progress: false
+    history: false
+    controls: false
+    menu: false
+---
+
+## Researchers Hate Him! Discover the One Weird Trick for Reproducing Studies Successfully.  {transition="fade-in slide-out" .small .center onclick="window.location.href='presentation.html';"}
+
+## Shocking Results! See How Easily You Can Reproduce Complex Analysis with This Technique.  {transition="fade-in slide-out" .small .center onclick="window.location.href='presentation.html';"}
+
+## Scientists are Amazed! Uncover the Secret Ingredient to Achieve Your Dream Body of Scientific Literature. {transition="fade-in slide-out" .small .center onclick="window.location.href='presentation.html';"}
+
+## I Got Rid of 3000 Lines of Code in Three Months, and You Can Too!  {transition="fade-in slide-out" .small .center onclick="window.location.href='presentation.html';"}

@@ -1,0 +1,3 @@
+project:
+  title: "slides-template"
+  pre-render: minerva/decode.lua

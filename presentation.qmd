@@ -1,0 +1,309 @@
+---
+title: "Reproducible Research in R"
+subtitle: "A Talk on How to Do the Same Thing More Than Once"
+author: "Aaron Peikert"
+institute: "Max Planck Institute for Human Development"
+format:
+  revealjs: 
+    theme: [default, mpi.scss]
+    slide-number: c/t
+    title-slide-attributes:
+      data-background-image: decoded.svg
+      data-background-size: contain 
+      data-background-opacity: ".1"
+---
+
+# Reproducibility {auto-animate="true"}
+
+# Reproducibility {auto-animate="true"}
+
+same thing in, same thing out
+
+## {.center}
+
+### As a student:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Conceptually
+
+[SEXY]{.fill25 .Huge}
+
+:::
+
+::: {.column width="50%"}
+### Technologically
+
+[SEXY]{.fill25 .Huge}
+
+:::
+
+::::
+
+## {.center}
+
+### As the begin of my PhD:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Conceptually
+
+[SEXY]{.fill25 .Huge}
+
+:::
+
+::: {.column width="50%"}
+### Technologically
+
+[SEXY]{.fill75 .Huge}
+
+:::
+
+::::
+
+## {.center}
+
+### At the end of my PhD:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Conceptually
+
+[SEXY]{.fill75 .Huge}
+
+:::
+
+::: {.column width="50%"}
+### Technologically
+
+[SEXY]{.fill25 .Huge}
+
+:::
+
+::::
+
+## {.center}
+
+### Now:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Conceptually
+
+[SEXY]{.fill75 .Huge}
+
+:::
+
+::: {.column width="50%"}
+### Technologically
+
+[SEXY]{.fill75 .Huge}
+
+:::
+
+::::
+
+# Conceptual {auto-animate="true"}
+
+# Conceptual {.tiny auto-animate="true"}
+
+# Conceptual {.tinitiny auto-animate="true"}
+
+## What is the purpose of reproducibility? {.center}
+
+## {.center auto-animate="true"}
+
+### Same data → Same Black box → Same results
+
+## {.center auto-animate="true"}
+
+### Same data → Same Black box → Same results
+
+### Reproducible?
+
+## {auto-animate="true" .center}
+
+### Statistical Models
+
+### fit
+
+### data
+
+## {auto-animate="true" .center}
+
+### Statistical Models
+
+### overfit {.highlight}
+
+### data
+
+## {auto-animate="true" .center}
+
+### By how much? 
+
+## {auto-animate="true" .center}
+
+### By how much? 
+
+or
+
+### Reproducibility and Overfit
+
+## {auto-animate="true" .center}
+
+### By how much? 
+
+::: {.incremental}
+
+- $\mathit{R}^2_{\text{adj.}}$
+- $C_p$
+- $AIC$
+- Cross Validation
+
+:::
+
+## {.center}
+
+$$
+\mathit{R}^2_{\text{adj.}} = \mathit{R}^2 - (1-R^2)\frac{p}{n - p - 1}
+$$
+
+$$
+C_p = \frac{\sum_{i=1}^n(\hat{y}_i- y_i)^2}{\sigma^2_e}-n-2p
+$$
+
+## Reproducibility? {#Reproducibility auto-animate="true" .center}
+
+## Reproducibility? {#Reproducibility auto-animate="true" .center}
+
+$$
+\text{df}(\hat{y}) = \frac{\sum^n_{i = 1}{\text{Cov}(\hat{y}_i, y_i)}}{\sigma^2_e}
+$$
+
+## Reproducibility? {#Reproducibility auto-animate="true" .center}
+
+$$
+\text{df}(\hat{y}) = \frac{\sum^n_{i = 1}{\text{Cov}(\hat{y}_i, y_i)}}{\sigma^2_e}
+$$
+
+This covariance requires:
+
+* formal derivation
+* repeated computation on same or pertubated data
+
+## {auto-animate="true" .center}
+
+This covariance requires:
+
+* formal derivation
+* repeated computation on same or pertubated data
+
+### Reproducibility. {#Reproducibility}
+
+
+## {.center}
+
+$$
+\mathit{R}^2_{\text{adj.}} = \mathit{R}^2 - (1 - \mathit{R}^2)\frac{n - df}{df - 1}
+$$
+
+$$
+C_p = \frac{\sum_{i=1}^n(\hat{y}_i - y_i)^2}{\sigma^2_e} - 3n + 2df
+$$
+
+## Information Criteria {.center}
+
+## {auto-animate="true"}
+
+Require the Hessian around the solution for their "overfit" correction.
+
+::: {.center}
+
+Computed via:
+
+* byproduct of optimization
+* via finite differences
+
+:::
+
+## {auto-animate="true"}
+
+Require the Hessian around the solution for their "overfit" correction.
+
+::: {.center}
+
+Computed via:
+
+### Reproducibility
+
+:::
+
+
+## Cross Validation {.center}
+
+is
+
+### Reproduction
+
+on subsamples.
+
+## Extended Definition {auto-animate="true"}
+
+First, computational reproducibility must ensure that the
+same data lead to the same results.
+
+## Extended Definition {auto-animate="true"}
+
+First, computational reproducibility must ensure that the
+same data lead to the same results.
+
+Second, computational reproducibility must
+make the inductive process repeatable on similar data.
+
+## {.center}
+
+### Reproducibility + Preregistration + Replication
+
+### enable
+
+### trustworthy inductive science
+
+# Technological {auto-animate="true"}
+
+# Technological {auto-animate="true"}
+
+> For reproducibility, it really needs to be reproducible and checkable by a stranger with little time or energy to spare, because even the author will soon enough be that stranger.
+
+##
+
+![](https://raw.githubusercontent.com/aaronpeikert/reproducible-research/master/Images/nutshell.svg)
+
+
+## Summary
+
+```{mermaid}
+%%| fig-width: '100%'
+%%| fig-height: '100%'
+%%{init: {'theme':'forest'}}%%
+flowchart LR
+
+    R(Reproducibility)
+    R --> C(Collaboration)
+
+
+  R --> X(Replication)
+  R --> Y(Preregistration)
+  R --> Z(Replication)
+  T(Trustworthy)
+
+  X --> T
+  Y --> T
+  Z --> T
+  C --> Cu(Cumulative)
+  T --> Cu
+  C --> T
+```
