@@ -553,9 +553,30 @@ C_p = \frac{\sum_{i=1}^n(\hat{y}_i - y_i)^2}{\sigma^2_e} - 3n + 2df
 </section>
 <section id="section-16" class="slide level2 center">
 <h2></h2>
-<h3 id="reproducibility-preregistration-replication">Reproducibility + Preregistration + Replication</h3>
-<h3 id="enable">enable</h3>
-<h3 id="trustworthy-inductive-science">trustworthy inductive science</h3>
+</section>
+<section id="summary" class="slide level2">
+<h2>Summary</h2>
+<div class="cell" data-reveal="true" data-fig-width="100%" data-fig-height="100%">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'theme':'forest'}}%%
+flowchart LR
+
+  R(Reproducibility)
+  R --&gt; X(Replication)
+  R --&gt; Y(Preregistration)
+  T(Trustworthy)
+
+  X --&gt; T
+  Y --&gt; T
+  R --&gt; T
+
+</pre>
+</div>
+</div>
+</div>
+</div>
 </section></section>
 <section id="technological" class="title-slide slide level1 center" data-auto-animate="true">
 <h1 data-id="quarto-animate-title">Technological</h1>
@@ -572,15 +593,42 @@ C_p = \frac{\sum_{i=1}^n(\hat{y}_i - y_i)^2}{\sigma^2_e} - 3n + 2df
 </section>
 <section id="now-you" class="slide level2">
 <h2>Now you!</h2>
+<p>Try to add your name to the next slide. Every time I show this presentation your name will be there.</p>
 </section>
-<section id="aaron-has-been-here." class="slide level2">
-<h2>Aaron has been here.</h2>
+<section id="section-17" class="slide level2 tiny center">
+<h2></h2>
+<h4 id="awesome-people">Awesome People:</h4>
+<ul>
+<li>Aaron Peikert</li>
+</ul>
 </section>
-<section id="section-17" class="slide level2" data-background-color="#eeeeee">
+<section id="four-problems-with-reproducibility" class="slide level2">
+<h2>Four Problems with Reproducibility</h2>
+<div>
+<ol type="1">
+<li class="fragment">versioning</li>
+<li class="fragment">copy&amp;paste errors</li>
+<li class="fragment">software dependencies</li>
+<li class="fragment">linking everything together</li>
+</ol>
+</div>
+</section>
+<section id="four-solutions-for-reproducibility" class="slide level2">
+<h2>Four Solutions for Reproducibility</h2>
+<div>
+<ol type="1">
+<li class="fragment">version control</li>
+<li class="fragment">dynamic documents</li>
+<li class="fragment">software management</li>
+<li class="fragment">workflow orchestration</li>
+</ol>
+</div>
+</section>
+<section id="section-18" class="slide level2" data-background-color="#eeeeee">
 <h2></h2>
 
 <img data-src="https://raw.githubusercontent.com/aaronpeikert/reproducible-research/master/Images/nutshell.svg" class="r-stretch"></section>
-<section id="summary" class="slide level2">
+<section id="summary-1" class="slide level2">
 <h2>Summary</h2>
 <div class="cell" data-reveal="true" data-fig-width="100%" data-fig-height="100%">
 <div class="cell-output-display">

@@ -161,29 +161,43 @@
     "text": "Extended Definition\nFirst, computational reproducibility must ensure that the same data lead to the same results.\nSecond, computational reproducibility must make the inductive process repeatable on similar data."
   },
   {
-    "objectID": "presentation.html#section-16",
-    "href": "presentation.html#section-16",
+    "objectID": "presentation.html#summary",
+    "href": "presentation.html#summary",
     "title": "Reproducible Research in R",
-    "section": "",
-    "text": "Reproducibility + Preregistration + Replication\nenable\ntrustworthy inductive science"
+    "section": "Summary",
+    "text": "Summary\n\n\n\n\n%%{init: {'theme':'forest'}}%%\nflowchart LR\n\n  R(Reproducibility)\n  R --&gt; X(Replication)\n  R --&gt; Y(Preregistration)\n  T(Trustworthy)\n\n  X --&gt; T\n  Y --&gt; T\n  R --&gt; T"
   },
   {
     "objectID": "presentation.html#now-you",
     "href": "presentation.html#now-you",
     "title": "Reproducible Research in R",
     "section": "Now you!",
-    "text": "Now you!"
+    "text": "Now you!\nTry to add your name to the next slide. Every time I show this presentation your name will be there."
   },
   {
-    "objectID": "presentation.html#aaron-has-been-here.",
-    "href": "presentation.html#aaron-has-been-here.",
+    "objectID": "presentation.html#section-17",
+    "href": "presentation.html#section-17",
     "title": "Reproducible Research in R",
-    "section": "Aaron has been here.",
-    "text": "Aaron has been here."
+    "section": "",
+    "text": "Awesome People:\n\nAaron Peikert"
   },
   {
-    "objectID": "presentation.html#summary",
-    "href": "presentation.html#summary",
+    "objectID": "presentation.html#four-problems-with-reproducibility",
+    "href": "presentation.html#four-problems-with-reproducibility",
+    "title": "Reproducible Research in R",
+    "section": "Four Problems with Reproducibility",
+    "text": "Four Problems with Reproducibility\n\n\nversioning\ncopy&paste errors\nsoftware dependencies\nlinking everything together"
+  },
+  {
+    "objectID": "presentation.html#four-solutions-for-reproducibility",
+    "href": "presentation.html#four-solutions-for-reproducibility",
+    "title": "Reproducible Research in R",
+    "section": "Four Solutions for Reproducibility",
+    "text": "Four Solutions for Reproducibility\n\n\nversion control\ndynamic documents\nsoftware management\nworkflow orchestration"
+  },
+  {
+    "objectID": "presentation.html#summary-1",
+    "href": "presentation.html#summary-1",
     "title": "Reproducible Research in R",
     "section": "Summary",
     "text": "Summary\n\n\n\n\n%%{init: {'theme':'forest'}}%%\nflowchart LR\n\n  R(Reproducibility)\n  R --&gt; C(Collaboration)\n  R --&gt; X(Replication)\n  R --&gt; Y(Preregistration)\n  T(Trustworthy)\n\n  X --&gt; T\n  Y --&gt; T\n  C --&gt; Cu(Cumulative)\n  T --&gt; Cu\n  C --&gt; T\n\n\n\n\n\n\n\nEdit"
