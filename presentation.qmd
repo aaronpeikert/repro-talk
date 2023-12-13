@@ -275,11 +275,24 @@ make the inductive process repeatable on similar data.
 
 ## {.center}
 
-### Reproducibility + Preregistration + Replication
+## Summary
 
-### enable
+```{mermaid}
+%%| fig-width: '100%'
+%%| fig-height: '100%'
+%%{init: {'theme':'forest'}}%%
+flowchart LR
 
-### trustworthy inductive science
+  R(Reproducibility)
+  R --> X(Replication)
+  R --> Y(Preregistration)
+  T(Trustworthy)
+
+  X --> T
+  Y --> T
+  R --> T
+
+```
 
 # Technological {auto-animate="true"}
 
@@ -291,7 +304,39 @@ make the inductive process repeatable on similar data.
 
 ## Now you!
 
-## Aaron has been here.
+Try to add your name to the next slide.
+Every time I show this presentation your name will be there.
+
+## {.tiny .center}
+
+#### Awesome People:
+
+* Aaron Peikert
+
+
+## Four Problems with Reproducibility
+
+
+::: {.incremental}
+
+1. versioning
+2. copy&paste errors
+3. software dependencies
+4. linking everything together
+
+:::
+
+## Four Solutions for Reproducibility
+
+
+::: {.incremental}
+
+1. version control
+2. dynamic documents
+3. software management
+4. workflow orchestration
+
+:::
 
 
 ## {data-background-color="#eeeeee"}
