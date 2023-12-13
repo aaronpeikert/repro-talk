@@ -14,6 +14,8 @@ format:
     include-in-header:
       - text: |
          <link rel = "shortcut icon" href = "https://www.mpg.de/favicon.ico" />
+aliases:
+  - index.html
 ---
 
 # Reproducibility {auto-animate="true"}
