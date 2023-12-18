@@ -259,6 +259,27 @@
     "text": "Four Solutions for Reproducibility\n\nversion control\ndynamic documents\nsoftware management\nworkflow orchestration"
   },
   {
+    "objectID": "presentation.html#section-20",
+    "href": "presentation.html#section-20",
+    "title": "Reproducible Research in R",
+    "section": "",
+    "text": "R + RMarkdown + Docker + Make + Git\nhttps://github.com/aaronpeikert/reproducible-research"
+  },
+  {
+    "objectID": "presentation.html#section-21",
+    "href": "presentation.html#section-21",
+    "title": "Reproducible Research in R",
+    "section": "",
+    "text": "Julia + RMarkdown + Pkg.jl + GitHub Actions + Git\nhttps://github.com/formal-methods-mpi/pkgmanuscript/blob/main/Dockerfile#L14"
+  },
+  {
+    "objectID": "presentation.html#section-22",
+    "href": "presentation.html#section-22",
+    "title": "Reproducible Research in R",
+    "section": "",
+    "text": "Python + Quarto + Docker + GitHub Actions + Git\nhttps://github.com/formal-methods-mpi/projects/pull/41/files"
+  },
+  {
     "objectID": "presentation.html#summary-1",
     "href": "presentation.html#summary-1",
     "title": "Reproducible Research in R",
