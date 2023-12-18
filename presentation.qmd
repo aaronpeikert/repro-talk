@@ -360,11 +360,29 @@ Every time I show this presentation your name will be there.
 
 ## Four Solutions for Reproducibility
 
-
 1. version control
 2. dynamic documents
 3. software management
 4. workflow orchestration
+
+##
+
+R + RMarkdown + Docker + Make + Git
+
+https://github.com/aaronpeikert/reproducible-research
+
+##
+
+Julia + RMarkdown + Pkg.jl + GitHub Actions + Git
+
+https://github.com/formal-methods-mpi/pkgmanuscript/blob/main/Dockerfile#L14
+
+##
+
+Python + Quarto + Docker + GitHub Actions + Git
+
+https://github.com/formal-methods-mpi/projects/pull/41/files
+
 
 ## Summary
 
