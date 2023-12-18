@@ -343,6 +343,28 @@ Every time I show this presentation your name will be there.
 
 ![](https://raw.githubusercontent.com/aaronpeikert/reproducible-research/master/Images/nutshell.svg)
 
+## ACRISS {.center}
+
+#### Association of Car Rental Industry Systems Standards
+
+## {.small .center}
+
+| Category | Type            | Trans / Driven wheels | Fuel / air-con              |
+|----------|-----------------|-----------------------|-----------------------------|
+| C: Compact| F: SUV          | A: Auto (drive unspecified)| R: Unspecified Fuel With AC  |
+| I: Intermediate| T: Convertible | B: Auto 4WD          | D: Diesel With AC           |
+| S: Standard| C: 2/4 Door     | D: Auto AWD          | H: Hybrid With AC           |
+| F: Fullsize| E: Coupe        | M: Manual (drive unspecified)| E: Electric With AC        |
+| P: Premium| S: Sport        |                       | V: Petrol With AC           |
+
+
+## Four Solutions for Reproducibility
+
+
+1. version control
+2. dynamic documents
+3. software management
+4. workflow orchestration
 
 ## Summary
 
