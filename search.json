@@ -249,7 +249,14 @@
     "href": "presentation.html#section-19",
     "title": "Reproducible Research in R",
     "section": "",
-    "text": "Category\nType\nTrans / Driven wheels\nFuel / air-con\n\n\n\n\nC: Compact\nF: SUV\nA: Auto (drive unspecified)\nR: Unspecified Fuel With AC\n\n\nI: Intermediate\nT: Convertible\nB: Auto 4WD\nD: Diesel With AC\n\n\nS: Standard\nC: 2/4 Door\nD: Auto AWD\nH: Hybrid With AC\n\n\nF: Fullsize\nE: Coupe\nM: Manual (drive unspecified)\nE: Electric With AC\n\n\nP: Premium\nS: Sport\n\nV: Petrol With AC"
+    "text": "Category\nType\nTrans / Driven wheels\nFuel / air-con\n\n\n\n\nE: Economy\nF: SUV\nA: Auto (drive unspecified)\nR: Unspecified Fuel With AC\n\n\nI: Intermediate\nT: Convertible\nB: Auto 4WD\nD: Diesel With AC\n\n\nS: Standard\nC: 2/4 Door\nD: Auto AWD\nH: Hybrid With AC\n\n\nF: Fullsize\nD: 4-5 Door\nM: Manual (drive unspecified)\nE: Electric With AC\n\n\nP: Premium\nS: Sport\n\nV: Petrol With AC"
+  },
+  {
+    "objectID": "presentation.html#section-20",
+    "href": "presentation.html#section-20",
+    "title": "Reproducible Research in R",
+    "section": "",
+    "text": "EDMR"
   },
   {
     "objectID": "presentation.html#four-solutions-for-reproducibility-1",
@@ -259,25 +266,39 @@
     "text": "Four Solutions for Reproducibility\n\nversion control\ndynamic documents\nsoftware management\nworkflow orchestration"
   },
   {
-    "objectID": "presentation.html#section-20",
-    "href": "presentation.html#section-20",
-    "title": "Reproducible Research in R",
-    "section": "",
-    "text": "R + RMarkdown + Docker + Make + Git\nhttps://github.com/aaronpeikert/reproducible-research"
-  },
-  {
     "objectID": "presentation.html#section-21",
     "href": "presentation.html#section-21",
     "title": "Reproducible Research in R",
     "section": "",
-    "text": "Julia + RMarkdown + Pkg.jl + GitHub Actions + Git\nhttps://github.com/formal-methods-mpi/pkgmanuscript/blob/main/Dockerfile#L14"
+    "text": "R + RMarkdown + Docker + Make + Git\nhttps://github.com/aaronpeikert/reproducible-research"
   },
   {
     "objectID": "presentation.html#section-22",
     "href": "presentation.html#section-22",
     "title": "Reproducible Research in R",
     "section": "",
+    "text": "Julia + RMarkdown + Pkg.jl + GitHub Actions + Git\nhttps://github.com/formal-methods-mpi/pkgmanuscript/blob/main/Dockerfile#L14"
+  },
+  {
+    "objectID": "presentation.html#section-23",
+    "href": "presentation.html#section-23",
+    "title": "Reproducible Research in R",
+    "section": "",
+    "text": "Lua + Quarto + GitHub Actions + GitHub Actions + Git\nhttps://github.com/aaronpeikert/repro-talk"
+  },
+  {
+    "objectID": "presentation.html#section-24",
+    "href": "presentation.html#section-24",
+    "title": "Reproducible Research in R",
+    "section": "",
     "text": "Python + Quarto + Docker + GitHub Actions + Git\nhttps://github.com/formal-methods-mpi/projects/pull/41/files"
+  },
+  {
+    "objectID": "presentation.html#section-25",
+    "href": "presentation.html#section-25",
+    "title": "Reproducible Research in R",
+    "section": "",
+    "text": "R + RMarkdown + Docker + Make + Git\nhttps://github.com/aaronpeikert/bayes-prereg/pull/97"
   },
   {
     "objectID": "presentation.html#summary-1",
