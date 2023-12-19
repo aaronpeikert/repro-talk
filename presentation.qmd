@@ -351,12 +351,15 @@ Every time I show this presentation your name will be there.
 
 | Category | Type            | Trans / Driven wheels | Fuel / air-con              |
 |----------|-----------------|-----------------------|-----------------------------|
-| C: Compact| F: SUV          | A: Auto (drive unspecified)| R: Unspecified Fuel With AC  |
+| E: Economy| F: SUV          | A: Auto (drive unspecified)| R: Unspecified Fuel With AC  |
 | I: Intermediate| T: Convertible | B: Auto 4WD          | D: Diesel With AC           |
 | S: Standard| C: 2/4 Door     | D: Auto AWD          | H: Hybrid With AC           |
-| F: Fullsize| E: Coupe        | M: Manual (drive unspecified)| E: Electric With AC        |
+| F: Fullsize| D: 4-5 Door        | M: Manual (drive unspecified)| E: Electric With AC        |
 | P: Premium| S: Sport        |                       | V: Petrol With AC           |
 
+## {.small .center}
+
+### EDMR
 
 ## Four Solutions for Reproducibility
 
@@ -365,24 +368,35 @@ Every time I show this presentation your name will be there.
 3. software management
 4. workflow orchestration
 
-##
+## {.center}
 
 R + RMarkdown + Docker + Make + Git
 
-https://github.com/aaronpeikert/reproducible-research
+<https://github.com/aaronpeikert/reproducible-research>
 
-##
+## {.center}
 
 Julia + RMarkdown + Pkg.jl + GitHub Actions + Git
 
-https://github.com/formal-methods-mpi/pkgmanuscript/blob/main/Dockerfile#L14
+<https://github.com/formal-methods-mpi/pkgmanuscript/blob/main/Dockerfile#L14>
 
-##
+## {.center}
+
+Lua + Quarto + GitHub Actions + GitHub Actions + Git
+
+<https://github.com/aaronpeikert/repro-talk>
+
+## {.center}
 
 Python + Quarto + Docker + GitHub Actions + Git
 
-https://github.com/formal-methods-mpi/projects/pull/41/files
+<https://github.com/formal-methods-mpi/projects/pull/41/files>
 
+## {.center}
+
+R + RMarkdown + Docker + Make + Git
+
+<https://github.com/aaronpeikert/bayes-prereg/pull/97>
 
 ## Summary
 
