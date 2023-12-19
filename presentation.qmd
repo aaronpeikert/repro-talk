@@ -361,6 +361,13 @@ Every time I show this presentation your name will be there.
 
 ### EDMR
 
+## The Rental Car Model
+
+**Ride it like you stole it**
+
+![](https://raw.githubusercontent.com/cjvanlissa/repro-talk/main/rentalcar.png)
+
+
 ## Four Solutions for Reproducibility
 
 1. version control
