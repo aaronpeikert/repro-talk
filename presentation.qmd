@@ -116,6 +116,16 @@ same thing in, same thing out
 
 ::::
 
+##
+
+> Accurate, unbiased, complete, and insightful reporting of the analytic treatment of data (be it quantitative or qualitative) must be a component of all research reports.
+
+:::{.right}
+
+--- Publication manual of the American Psychological Association, 7th ed.
+
+:::
+
 # Conceptual {auto-animate="true"}
 
 # Conceptual {.tiny auto-animate="true"}
@@ -123,6 +133,88 @@ same thing in, same thing out
 # Conceptual {.tinitiny auto-animate="true"}
 
 ## What is the purpose of reproducibility? {.center}
+
+## {.center auto-animate="true"}
+
+
+### 1. Collaboration
+
+
+## {.center auto-animate="true"}
+
+
+### 1. Collaboration
+
+### 2. Error checking
+
+
+## {.center auto-animate="true"}
+
+
+### 1. Collaboration
+
+### 2. Error checking
+
+### 3. Prediction
+
+## Are you a *good* Human / Researcher? {.center auto-animate="true"}
+
+## Are you a *good* Human / Researcher? {.center auto-animate="true"}
+
+Perhaps.
+
+## Are you a *good* Human / Researcher? {.center auto-animate="true"}
+
+Perhaps.
+
+But it does not hurt to want reproducibility out of selfish reasons.
+
+## 1. Collaboration
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+> Nous connaissons la vérité non seulement par la raison mais encore par le coeur [...]
+
+> We know the truth, not only by the reason, but also by the heart.
+
+[*Pascal, B. (1670). *Pensées*. (Lines 110–282).*]{.tiny}
+
+:::
+
+::: {.column width="50%"}
+
+### → Practical Part
+
+:::
+
+::::
+
+
+## 2. Error checking {auto-animate="true"}
+
+1. Computational level → Goal
+2. Algorithmic level → Method
+3. Implementational level → Means
+4. Hardware level → Platform
+5. Data level → Reality
+6. Person level → Experience
+
+[1-3. stolen from David Marr 1982/2010 book Vision]{.tinitiny}
+
+## 2. Error checking {auto-animate="true"}
+
+Redoing activities try to exclude mistakes in these domains:
+
+* Redoing swaps nothing but Time
+* Reproduction swaps Person and Hardware
+* Direct Replication swaps Data
+* Reimplementation swaps Implementation
+* Robustness checks swap Algorithm
+* Conceptual Replications swap Goal
+
+# 3. Prediction
 
 ## {.center auto-animate="true"}
 
@@ -302,20 +394,7 @@ flowchart LR
 
 [--- [Gwern Branwen](https://statmodeling.stat.columbia.edu/2023/10/29/simulations-of-measurement-error-and-the-replication-crisis-maybe-loken-and-i-have-a-mistake-in-our-paper/#comment-2278039)]{.scriptsize}
 
-## Now you!
-
-Try to add your name to the next slide.
-Every time I show this presentation your name will be there.
-
-## {.tiny .center}
-
-#### Awesome People:
-
-* Aaron Peikert
-
-
 ## Four Problems with Reproducibility
-
 
 ::: {.incremental}
 
@@ -385,7 +464,7 @@ R + RMarkdown + Docker + Make + Git
 
 Julia + RMarkdown + Pkg.jl + GitHub Actions + Git
 
-<https://github.com/formal-methods-mpi/pkgmanuscript/blob/main/Dockerfile#L14>
+<https://github.com/formal-methods-mpi/pkgmanuscript/blob/main/Dockerfile>
 
 ## {.center}
 
@@ -425,3 +504,14 @@ flowchart LR
   T --> Cu
   C --> T
 ```
+
+# Time to get active
+
+::: {.incremental}
+
+* find a scientific document where you did the data analysis, e.g. master thesis, conference talk/poster etc. (5 min)
+* Could you reproduce it in a day? Write down what helps and what is not helpfull: <https://pad.gwdg.de/s/fR6cTmR3K> (10min)
+* Find an article/preprint you like and try to get the materials nessesary (30min)
+* Diskussion
+
+:::
