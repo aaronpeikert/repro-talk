@@ -8,10 +8,10 @@
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.450">
+  <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Aaron Peikert">
-  <title>slides-template - Reproducible Research in R</title>
+  <title>slides-template – Reproducible Research in R</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -156,7 +156,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -364,8 +365,7 @@ Aaron Peikert
 </div><div class="column" style="width:50%;">
 <h3 id="technologically">Technologically</h3>
 <p><span class="fill25 Huge">SEXY</span></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="section-1" class="slide level2 center">
 <h2></h2>
@@ -377,8 +377,7 @@ Aaron Peikert
 </div><div class="column" style="width:50%;">
 <h3 id="technologically-1">Technologically</h3>
 <p><span class="fill75 Huge">SEXY</span></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="section-2" class="slide level2 center">
 <h2></h2>
@@ -390,8 +389,7 @@ Aaron Peikert
 </div><div class="column" style="width:50%;">
 <h3 id="technologically-2">Technologically</h3>
 <p><span class="fill25 Huge">SEXY</span></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="section-3" class="slide level2 center">
 <h2></h2>
@@ -403,7 +401,15 @@ Aaron Peikert
 </div><div class="column" style="width:50%;">
 <h3 id="technologically-3">Technologically</h3>
 <p><span class="fill75 Huge">SEXY</span></p>
-</div>
+</div></div>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<blockquote>
+<p>Accurate, unbiased, complete, and insightful reporting of the analytic treatment of data (be it quantitative or qualitative) must be a component of all research reports.</p>
+</blockquote>
+<div class="right">
+<p>— Publication manual of the American Psychological Association, 7th ed.</p>
 </div>
 </section></section>
 <section id="conceptual" class="title-slide slide level1 center" data-auto-animate="true">
@@ -424,38 +430,109 @@ Aaron Peikert
 <section id="what-is-the-purpose-of-reproducibility" class="slide level2 center">
 <h2>What is the purpose of reproducibility?</h2>
 </section>
-<section id="section-4" class="slide level2 center" data-auto-animate="true">
+<section id="section-5" class="slide level2 center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<h3 id="collaboration">1. Collaboration</h3>
+</section>
+<section id="section-6" class="slide level2 center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<h3 id="collaboration-1">1. Collaboration</h3>
+<h3 id="error-checking">2. Error checking</h3>
+</section>
+<section id="section-7" class="slide level2 center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<h3 id="collaboration-2">1. Collaboration</h3>
+<h3 id="error-checking-1">2. Error checking</h3>
+<h3 id="prediction">3. Prediction</h3>
+</section>
+<section id="are-you-a-good-human-researcher" class="slide level2 center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Are you a <em>good</em> Human / Researcher?</h2>
+</section>
+<section id="are-you-a-good-human-researcher-1" class="slide level2 center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Are you a <em>good</em> Human / Researcher?</h2>
+<p>Perhaps.</p>
+</section>
+<section id="are-you-a-good-human-researcher-2" class="slide level2 center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Are you a <em>good</em> Human / Researcher?</h2>
+<p>Perhaps.</p>
+<p>But it does not hurt to want reproducibility out of selfish reasons.</p>
+</section>
+<section id="collaboration-3" class="slide level2">
+<h2>1. Collaboration</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<blockquote>
+<p>Nous connaissons la vérité non seulement par la raison mais encore par le coeur […]</p>
+</blockquote>
+<blockquote>
+<p>We know the truth, not only by the reason, but also by the heart.</p>
+</blockquote>
+<p><span class="tiny"><em>Pascal, B. (1670). </em>Pensées<em>. (Lines 110–282).</em></span></p>
+</div><div class="column" style="width:50%;">
+<h3 id="practical-part">→ Practical Part</h3>
+</div></div>
+</section>
+<section id="error-checking-2" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">2. Error checking</h2>
+<ol type="1">
+<li>Computational level → Goal</li>
+<li>Algorithmic level → Method</li>
+<li>Implementational level → Means</li>
+<li>Hardware level → Platform</li>
+<li>Data level → Reality</li>
+<li>Person level → Experience</li>
+</ol>
+<p><span class="tinitiny">1-3. stolen from David Marr 1982/2010 book Vision</span></p>
+</section>
+<section id="error-checking-3" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">2. Error checking</h2>
+<p>Redoing activities try to exclude mistakes in these domains:</p>
+<ul>
+<li>Redoing swaps nothing but Time</li>
+<li>Reproduction swaps Person and Hardware</li>
+<li>Direct Replication swaps Data</li>
+<li>Reimplementation swaps Implementation</li>
+<li>Robustness checks swap Algorithm</li>
+<li>Conceptual Replications swap Goal</li>
+</ul>
+</section></section>
+<section>
+<section id="prediction-1" class="title-slide slide level1 center">
+<h1>3. Prediction</h1>
+
+</section>
+<section id="section-8" class="slide level2 center" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <h3 id="same-data-same-black-box-same-results">Same data → Same Black box → Same results</h3>
 </section>
-<section id="section-5" class="slide level2 center" data-auto-animate="true">
+<section id="section-9" class="slide level2 center" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <h3 id="same-data-same-black-box-same-results-1">Same data → Same Black box → Same results</h3>
 <h3 id="reproducible">Reproducible?</h3>
 </section>
-<section id="section-6" class="slide level2 center" data-auto-animate="true">
+<section id="section-10" class="slide level2 center" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <h3 id="statistical-models">Statistical Models</h3>
 <h3 id="fit">fit</h3>
 <h3 id="data">data</h3>
 </section>
-<section id="section-7" class="slide level2 center" data-auto-animate="true">
+<section id="section-11" class="slide level2 center" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <h3 id="statistical-models-1">Statistical Models</h3>
 <h3 class="highlight" id="overfit">overfit</h3>
 <h3 id="data-1">data</h3>
 </section>
-<section id="section-8" class="slide level2 center" data-auto-animate="true">
+<section id="section-12" class="slide level2 center" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <h3 id="by-how-much">By how much?</h3>
 </section>
-<section id="section-9" class="slide level2 center" data-auto-animate="true">
+<section id="section-13" class="slide level2 center" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <h3 id="by-how-much-1">By how much?</h3>
 <p>or</p>
 <h3 id="reproducibility-and-overfit">Reproducibility and Overfit</h3>
 </section>
-<section id="section-10" class="slide level2 center" data-auto-animate="true">
+<section id="section-14" class="slide level2 center" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <h3 id="by-how-much-2">By how much?</h3>
 <div>
@@ -467,7 +544,7 @@ Aaron Peikert
 </ul>
 </div>
 </section>
-<section id="section-11" class="slide level2 center">
+<section id="section-15" class="slide level2 center">
 <h2></h2>
 <p><span class="math display">\[
 \mathit{R}^2_{\text{adj.}} = \mathit{R}^2 - (1-R^2)\frac{p}{n - p - 1}
@@ -496,7 +573,7 @@ C_p = \frac{\sum_{i=1}^n(\hat{y}_i- y_i)^2}{\sigma^2_e}-n-2p
 <li>repeated computation on same or pertubated data</li>
 </ul>
 </section>
-<section id="section-12" class="slide level2 center" data-auto-animate="true">
+<section id="section-16" class="slide level2 center" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <p>This covariance requires:</p>
 <ul>
@@ -505,7 +582,7 @@ C_p = \frac{\sum_{i=1}^n(\hat{y}_i- y_i)^2}{\sigma^2_e}-n-2p
 </ul>
 <h3 id="Reproducibility">Reproducibility.</h3>
 </section>
-<section id="section-13" class="slide level2 center">
+<section id="section-17" class="slide level2 center">
 <h2></h2>
 <p><span class="math display">\[
 \mathit{R}^2_{\text{adj.}} = \mathit{R}^2 - (1 - \mathit{R}^2)\frac{n - df}{df - 1}
@@ -517,7 +594,7 @@ C_p = \frac{\sum_{i=1}^n(\hat{y}_i - y_i)^2}{\sigma^2_e} - 3n + 2df
 <section id="information-criteria" class="slide level2 center">
 <h2>Information Criteria</h2>
 </section>
-<section id="section-14" class="slide level2" data-auto-animate="true">
+<section id="section-18" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <p>Require the Hessian around the solution for their “overfit” correction.</p>
 <div class="center">
@@ -528,7 +605,7 @@ C_p = \frac{\sum_{i=1}^n(\hat{y}_i - y_i)^2}{\sigma^2_e} - 3n + 2df
 </ul>
 </div>
 </section>
-<section id="section-15" class="slide level2" data-auto-animate="true">
+<section id="section-19" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <p>Require the Hessian around the solution for their “overfit” correction.</p>
 <div class="center">
@@ -551,14 +628,15 @@ C_p = \frac{\sum_{i=1}^n(\hat{y}_i - y_i)^2}{\sigma^2_e} - 3n + 2df
 <p>First, computational reproducibility must ensure that the same data lead to the same results.</p>
 <p>Second, computational reproducibility must make the inductive process repeatable on similar data.</p>
 </section>
-<section id="section-16" class="slide level2 center">
+<section id="section-20" class="slide level2 center">
 <h2></h2>
 </section>
 <section id="summary" class="slide level2">
 <h2>Summary</h2>
-<div class="cell" data-reveal="true" data-fig-width="100%" data-fig-height="100%">
+<div class="cell" data-reveal="true" data-fig-width="100%" data-fig-height="100%" data-layout-align="default">
 <div class="cell-output-display">
 <div>
+<p></p><figure class=""><p></p>
 <div>
 <pre class="mermaid mermaid-js">%%{init: {'theme':'forest'}}%%
 flowchart LR
@@ -574,6 +652,7 @@ flowchart LR
 
 </pre>
 </div>
+<p></p></figure><p></p>
 </div>
 </div>
 </div>
@@ -590,17 +669,6 @@ flowchart LR
 <p>For reproducibility, it really needs to be reproducible and checkable by a stranger with little time or energy to spare, because even the author will soon enough be that stranger.</p>
 </blockquote>
 <p><span class="scriptsize">— <a href="https://statmodeling.stat.columbia.edu/2023/10/29/simulations-of-measurement-error-and-the-replication-crisis-maybe-loken-and-i-have-a-mistake-in-our-paper/#comment-2278039">Gwern Branwen</a></span></p>
-</section>
-<section id="now-you" class="slide level2">
-<h2>Now you!</h2>
-<p>Try to add your name to the next slide. Every time I show this presentation your name will be there.</p>
-</section>
-<section id="section-17" class="slide level2 tiny center">
-<h2></h2>
-<h4 id="awesome-people">Awesome People:</h4>
-<ul>
-<li>Aaron Peikert</li>
-</ul>
 </section>
 <section id="four-problems-with-reproducibility" class="slide level2">
 <h2>Four Problems with Reproducibility</h2>
@@ -624,7 +692,7 @@ flowchart LR
 </ol>
 </div>
 </section>
-<section id="section-18" class="slide level2" data-background-color="#eeeeee">
+<section id="section-21" class="slide level2" data-background-color="#eeeeee">
 <h2></h2>
 
 <img data-src="https://raw.githubusercontent.com/aaronpeikert/reproducible-research/master/Images/nutshell.svg" class="r-stretch"></section>
@@ -632,9 +700,9 @@ flowchart LR
 <h2>ACRISS</h2>
 <h4 id="association-of-car-rental-industry-systems-standards">Association of Car Rental Industry Systems Standards</h4>
 </section>
-<section id="section-19" class="slide level2 small center">
+<section id="section-22" class="slide level2 small center">
 <h2></h2>
-<table>
+<table class="caption-top">
 <colgroup>
 <col style="width: 12%">
 <col style="width: 21%">
@@ -683,7 +751,7 @@ flowchart LR
 </tbody>
 </table>
 </section>
-<section id="section-20" class="slide level2 small center">
+<section id="section-23" class="slide level2 small center">
 <h2></h2>
 <h3 id="edmr">EDMR</h3>
 </section>
@@ -701,36 +769,37 @@ flowchart LR
 <li>workflow orchestration</li>
 </ol>
 </section>
-<section id="section-21" class="slide level2 center">
+<section id="section-24" class="slide level2 center">
 <h2></h2>
 <p>R + RMarkdown + Docker + Make + Git</p>
 <p><a href="https://github.com/aaronpeikert/reproducible-research" class="uri">https://github.com/aaronpeikert/reproducible-research</a></p>
 </section>
-<section id="section-22" class="slide level2 center">
+<section id="section-25" class="slide level2 center">
 <h2></h2>
 <p>Julia + RMarkdown + Pkg.jl + GitHub Actions + Git</p>
-<p><a href="https://github.com/formal-methods-mpi/pkgmanuscript/blob/main/Dockerfile#L14" class="uri">https://github.com/formal-methods-mpi/pkgmanuscript/blob/main/Dockerfile#L14</a></p>
+<p><a href="https://github.com/formal-methods-mpi/pkgmanuscript/blob/main/Dockerfile" class="uri">https://github.com/formal-methods-mpi/pkgmanuscript/blob/main/Dockerfile</a></p>
 </section>
-<section id="section-23" class="slide level2 center">
+<section id="section-26" class="slide level2 center">
 <h2></h2>
 <p>Lua + Quarto + GitHub Actions + GitHub Actions + Git</p>
 <p><a href="https://github.com/aaronpeikert/repro-talk" class="uri">https://github.com/aaronpeikert/repro-talk</a></p>
 </section>
-<section id="section-24" class="slide level2 center">
+<section id="section-27" class="slide level2 center">
 <h2></h2>
 <p>Python + Quarto + Docker + GitHub Actions + Git</p>
 <p><a href="https://github.com/formal-methods-mpi/projects/pull/41/files" class="uri">https://github.com/formal-methods-mpi/projects/pull/41/files</a></p>
 </section>
-<section id="section-25" class="slide level2 center">
+<section id="section-28" class="slide level2 center">
 <h2></h2>
 <p>R + RMarkdown + Docker + Make + Git</p>
 <p><a href="https://github.com/aaronpeikert/bayes-prereg/pull/97" class="uri">https://github.com/aaronpeikert/bayes-prereg/pull/97</a></p>
 </section>
 <section id="summary-1" class="slide level2">
 <h2>Summary</h2>
-<div class="cell" data-reveal="true" data-fig-width="100%" data-fig-height="100%">
+<div class="cell" data-reveal="true" data-fig-width="100%" data-fig-height="100%" data-layout-align="default">
 <div class="cell-output-display">
 <div>
+<p></p><figure class=""><p></p>
 <div>
 <pre class="mermaid mermaid-js">%%{init: {'theme':'forest'}}%%
 flowchart LR
@@ -748,14 +817,28 @@ flowchart LR
   C --&gt; T
 </pre>
 </div>
+<p></p></figure><p></p>
 </div>
 </div>
+</div>
+</section></section>
+<section id="time-to-get-active" class="title-slide slide level1 center">
+<h1>Time to get active</h1>
+<div>
+<ul>
+<li class="fragment">find a scientific document where you did the data analysis, e.g.&nbsp;master thesis, conference talk/poster etc. (5 min)</li>
+<li class="fragment">Could you reproduce it in a day? Write down what helps and what is not helpfull: <a href="https://pad.gwdg.de/s/fR6cTmR3K" class="uri">https://pad.gwdg.de/s/fR6cTmR3K</a> (10min)</li>
+<li class="fragment">Find an article/preprint you like and try to get the materials nessesary (30min)</li>
+<li class="fragment">Diskussion</li>
+</ul>
 </div>
 
+<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p><a href="https://github.com/aaronpeikert/repro-talk/edit/main/presentation.qmd">Edit</a></p>
 </div>
-</section></section>
+</div>
+</section>
     </div>
   </div>
 
@@ -782,7 +865,6 @@ flowchart LR
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -999,18 +1081,7 @@ flowchart LR
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1042,11 +1113,50 @@ flowchart LR
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
-      function tippyHover(el, contentFn) {
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp("https:\/\/aaronpeikert\.github\.io\/repro-talk\/");
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -1056,8 +1166,17 @@ flowchart LR
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
@@ -1071,7 +1190,11 @@ flowchart LR
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {

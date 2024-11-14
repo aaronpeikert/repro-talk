@@ -1,1 +1,1 @@
-Sitemap: https://github.com/aaronpeikert/repro-talk/sitemap.xml
+Sitemap: https://aaronpeikert.github.io/repro-talk/sitemap.xml

@@ -7,13 +7,6 @@
     "text": "ChatGPT from 05.01.23\n\naaron.peikert@posteo.de please write a taylor swift song about the importance of computational reproducible research\n\nVerse 1: I’m staring at a screen, trying to make sense of it all Data’s flying left and right, I can’t let it fall I run the code again, just to be sure I need to know that my results aren’t a blur\nChorus: It’s got to be reproducible, if we’re gonna make it right Computational research, it’s got to see the light We can’t afford to get it wrong, not even for a moment We’ve got to be sure, that our work is truly ownment\nVerse 2: I share my results with my colleagues and peers They run the code too, to see if it appears Just as I intended, with no room for error We’ve got to be certain, that our work is a terror\nChorus: It’s got to be reproducible, if we’re gonna make it right Computational research, it’s got to see the light We can’t afford to get it wrong, not even for a moment We’ve got to be sure, that our work is truly ownment\nBridge: We can’t let our findings be in doubt We’ve got to make sure that we figure it out We can’t let our work be in vain We’ve got to make sure that our research remains\nChorus: It’s got to be reproducible, if we’re gonna make it right Computational research, it’s got to see the light We can’t afford to get it wrong, not even for a moment We’ve got to be sure, that our work is truly ownment\n\naaron.peikert@posteo.de Can you rewrite the chorus?\n\nSure! Here’s a revised version of the chorus:\nChorus: We need reproducibility, to get our research right Computational science, it’s got to see the light We can’t afford to make mistakes, not even for a minute We’ve got to be sure, that our findings aren’t fictitious\n\naaron.peikert@posteo.de Can you improve the rhyme of the chorus?\n\nCertainly! Here is an improved version of the chorus with rhymes:\nChorus: Reproducibility’s key, to make our research complete In computational science, we can’t afford to cheat We’ve got to be certain, that our work is rock-solid Or our findings could be invalid, it’s a risk we can’t sidestep\n\naaron.peikert@posteo.de Can you make the last line rhyme?\n\nSure! Here is an improved version of the chorus with rhyming in the last line:\nChorus: Reproducibility’s key, to make our research complete In computational science, we can’t afford to cheat We’ve got to be certain, that our work is rock-solid Or our findings could be void, it’s a risk we must avoid\n\naaron.peikert@posteo.de write a song in the style of kanye west on the importance of computational reprocibility\n\n(Verse 1) I was in the lab, runnin’ experiments Data flying left and right, I was so intent I thought I had it all figured out But when I tried to reproduce it, the results had me in doubt\n(Chorus) Computational reproducibility, it’s a must If we wanna make sure our research is a plus We can’t afford to leave any room for error Gotta make sure it’s solid, like a skyscraper\n(Verse 2) I learned my lesson the hard way Gotta document every step, gotta make it pay I can’t afford to cut corners or take any shortcuts Gotta make sure my findings are rock-solid, no doubt\n(Chorus) Computational reproducibility, it’s a must If we wanna make sure our research is a plus We can’t afford to leave any room for error Gotta make sure it’s solid, like a skyscraper\n(Bridge) We can’t let our work be in vain Gotta make sure it stands up to the test again and again Computational reproducibility, it’s the key To making sure our research is rock-solid, can’t you see?\n(Chorus) Computational reproducibility, it’s a must If we wanna make sure our research is a plus We can’t afford to leave any room for error Gotta make sure it’s solid, like a skyscraper"
   },
   {
-    "objectID": "abstract.html",
-    "href": "abstract.html",
-    "title": "slides-template",
-    "section": "",
-    "text": "Computational reproducibility is a building block for transparent and cumulative science. It enables the originator and other researchers, on other computers and later in time, to reproduce and thus understand how results came about while avoiding various errors that may lead to erroneous reporting of statistical and computational results. But what does it take to make something reproducible? Until recently, detailed descriptions of methods and analyses were the primary instrument for ensuring scientific reproducibility. Such manual description fails to ensure reproduction due to four different reasons that get more likely the more central computational methods are for research. To meet these challenges, we propose that researchers take advantage of four technological advancements—version control, dynamic document generation, workflow automation, and containerization. Our workflow enables scientists to achieve a more comprehensive standard that allows anyone to access a digital research repository and reproduce all computational steps from raw data to final report with a single command."
-  },
-  {
     "objectID": "waiting.html#researchers-hate-him-discover-the-one-weird-trick-for-reproducing-studies-successfully.",
     "href": "waiting.html#researchers-hate-him-discover-the-one-weird-trick-for-reproducing-studies-successfully.",
     "title": "slides-template",
@@ -42,11 +35,11 @@
     "text": "I Got Rid of 3000 Lines of Code in Three Months, and You Can Too!"
   },
   {
-    "objectID": "LICENSE.html",
-    "href": "LICENSE.html",
+    "objectID": "abstract.html",
+    "href": "abstract.html",
     "title": "slides-template",
     "section": "",
-    "text": "To the extent possible under law, Aaron Peikert has waived all copyright and related or neighboring rights to this work. This work is published from Germany."
+    "text": "Computational reproducibility is a building block for transparent and cumulative science. It enables the originator and other researchers, on other computers and later in time, to reproduce and thus understand how results came about while avoiding various errors that may lead to erroneous reporting of statistical and computational results. But what does it take to make something reproducible? Until recently, detailed descriptions of methods and analyses were the primary instrument for ensuring scientific reproducibility. Such manual description fails to ensure reproduction due to four different reasons that get more likely the more central computational methods are for research. To meet these challenges, we propose that researchers take advantage of four technological advancements—version control, dynamic document generation, workflow automation, and containerization. Our workflow enables scientists to achieve a more comprehensive standard that allows anyone to access a digital research repository and reproduce all computational steps from raw data to final report with a single command."
   },
   {
     "objectID": "presentation.html#section",
@@ -77,6 +70,13 @@
     "text": "Now:\n\n\nConceptually\nSEXY\n\nTechnologically\nSEXY"
   },
   {
+    "objectID": "presentation.html#section-4",
+    "href": "presentation.html#section-4",
+    "title": "Reproducible Research in R",
+    "section": "",
+    "text": "Accurate, unbiased, complete, and insightful reporting of the analytic treatment of data (be it quantitative or qualitative) must be a component of all research reports.\n\n\n— Publication manual of the American Psychological Association, 7th ed."
+  },
+  {
     "objectID": "presentation.html#what-is-the-purpose-of-reproducibility",
     "href": "presentation.html#what-is-the-purpose-of-reproducibility",
     "title": "Reproducible Research in R",
@@ -84,57 +84,120 @@
     "text": "What is the purpose of reproducibility?"
   },
   {
-    "objectID": "presentation.html#section-4",
-    "href": "presentation.html#section-4",
-    "title": "Reproducible Research in R",
-    "section": "",
-    "text": "Same data → Same Black box → Same results"
-  },
-  {
     "objectID": "presentation.html#section-5",
     "href": "presentation.html#section-5",
     "title": "Reproducible Research in R",
     "section": "",
-    "text": "Same data → Same Black box → Same results\nReproducible?"
+    "text": "1. Collaboration"
   },
   {
     "objectID": "presentation.html#section-6",
     "href": "presentation.html#section-6",
     "title": "Reproducible Research in R",
     "section": "",
-    "text": "Statistical Models\nfit\ndata"
+    "text": "1. Collaboration\n2. Error checking"
   },
   {
     "objectID": "presentation.html#section-7",
     "href": "presentation.html#section-7",
     "title": "Reproducible Research in R",
     "section": "",
-    "text": "Statistical Models\noverfit\ndata"
+    "text": "1. Collaboration\n2. Error checking\n3. Prediction"
+  },
+  {
+    "objectID": "presentation.html#are-you-a-good-human-researcher",
+    "href": "presentation.html#are-you-a-good-human-researcher",
+    "title": "Reproducible Research in R",
+    "section": "Are you a good Human / Researcher?",
+    "text": "Are you a good Human / Researcher?"
+  },
+  {
+    "objectID": "presentation.html#are-you-a-good-human-researcher-1",
+    "href": "presentation.html#are-you-a-good-human-researcher-1",
+    "title": "Reproducible Research in R",
+    "section": "Are you a good Human / Researcher?",
+    "text": "Are you a good Human / Researcher?\nPerhaps."
+  },
+  {
+    "objectID": "presentation.html#are-you-a-good-human-researcher-2",
+    "href": "presentation.html#are-you-a-good-human-researcher-2",
+    "title": "Reproducible Research in R",
+    "section": "Are you a good Human / Researcher?",
+    "text": "Are you a good Human / Researcher?\nPerhaps.\nBut it does not hurt to want reproducibility out of selfish reasons."
+  },
+  {
+    "objectID": "presentation.html#collaboration-3",
+    "href": "presentation.html#collaboration-3",
+    "title": "Reproducible Research in R",
+    "section": "1. Collaboration",
+    "text": "1. Collaboration\n\n\n\nNous connaissons la vérité non seulement par la raison mais encore par le coeur […]\n\n\nWe know the truth, not only by the reason, but also by the heart.\n\nPascal, B. (1670). Pensées. (Lines 110–282).\n\n→ Practical Part"
+  },
+  {
+    "objectID": "presentation.html#error-checking-2",
+    "href": "presentation.html#error-checking-2",
+    "title": "Reproducible Research in R",
+    "section": "2. Error checking",
+    "text": "2. Error checking\n\nComputational level → Goal\nAlgorithmic level → Method\nImplementational level → Means\nHardware level → Platform\nData level → Reality\nPerson level → Experience\n\n1-3. stolen from David Marr 1982/2010 book Vision"
+  },
+  {
+    "objectID": "presentation.html#error-checking-3",
+    "href": "presentation.html#error-checking-3",
+    "title": "Reproducible Research in R",
+    "section": "2. Error checking",
+    "text": "2. Error checking\nRedoing activities try to exclude mistakes in these domains:\n\nRedoing swaps nothing but Time\nReproduction swaps Person and Hardware\nDirect Replication swaps Data\nReimplementation swaps Implementation\nRobustness checks swap Algorithm\nConceptual Replications swap Goal"
   },
   {
     "objectID": "presentation.html#section-8",
     "href": "presentation.html#section-8",
     "title": "Reproducible Research in R",
     "section": "",
-    "text": "By how much?"
+    "text": "Same data → Same Black box → Same results"
   },
   {
     "objectID": "presentation.html#section-9",
     "href": "presentation.html#section-9",
     "title": "Reproducible Research in R",
     "section": "",
-    "text": "By how much?\nor\nReproducibility and Overfit"
+    "text": "Same data → Same Black box → Same results\nReproducible?"
   },
   {
     "objectID": "presentation.html#section-10",
     "href": "presentation.html#section-10",
     "title": "Reproducible Research in R",
     "section": "",
-    "text": "By how much?\n\n\n\\(\\mathit{R}^2_{\\text{adj.}}\\)\n\\(C_p\\)\n\\(AIC\\)\nCross Validation"
+    "text": "Statistical Models\nfit\ndata"
   },
   {
     "objectID": "presentation.html#section-11",
     "href": "presentation.html#section-11",
+    "title": "Reproducible Research in R",
+    "section": "",
+    "text": "Statistical Models\noverfit\ndata"
+  },
+  {
+    "objectID": "presentation.html#section-12",
+    "href": "presentation.html#section-12",
+    "title": "Reproducible Research in R",
+    "section": "",
+    "text": "By how much?"
+  },
+  {
+    "objectID": "presentation.html#section-13",
+    "href": "presentation.html#section-13",
+    "title": "Reproducible Research in R",
+    "section": "",
+    "text": "By how much?\nor\nReproducibility and Overfit"
+  },
+  {
+    "objectID": "presentation.html#section-14",
+    "href": "presentation.html#section-14",
+    "title": "Reproducible Research in R",
+    "section": "",
+    "text": "By how much?\n\n\n\\(\\mathit{R}^2_{\\text{adj.}}\\)\n\\(C_p\\)\n\\(AIC\\)\nCross Validation"
+  },
+  {
+    "objectID": "presentation.html#section-15",
+    "href": "presentation.html#section-15",
     "title": "Reproducible Research in R",
     "section": "",
     "text": "\\[\n\\mathit{R}^2_{\\text{adj.}} = \\mathit{R}^2 - (1-R^2)\\frac{p}{n - p - 1}\n\\]\n\\[\nC_p = \\frac{\\sum_{i=1}^n(\\hat{y}_i- y_i)^2}{\\sigma^2_e}-n-2p\n\\]"
@@ -147,15 +210,15 @@
     "text": "Reproducibility?\n\\[\n\\text{df}(\\hat{y}) = \\frac{\\sum^n_{i = 1}{\\text{Cov}(\\hat{y}_i, y_i)}}{\\sigma^2_e}\n\\]\nThis covariance requires:\n\nformal derivation\nrepeated computation on same or pertubated data"
   },
   {
-    "objectID": "presentation.html#section-12",
-    "href": "presentation.html#section-12",
+    "objectID": "presentation.html#section-16",
+    "href": "presentation.html#section-16",
     "title": "Reproducible Research in R",
     "section": "",
     "text": "This covariance requires:\n\nformal derivation\nrepeated computation on same or pertubated data\n\nReproducibility."
   },
   {
-    "objectID": "presentation.html#section-13",
-    "href": "presentation.html#section-13",
+    "objectID": "presentation.html#section-17",
+    "href": "presentation.html#section-17",
     "title": "Reproducible Research in R",
     "section": "",
     "text": "\\[\n\\mathit{R}^2_{\\text{adj.}} = \\mathit{R}^2 - (1 - \\mathit{R}^2)\\frac{n - df}{df - 1}\n\\]\n\\[\nC_p = \\frac{\\sum_{i=1}^n(\\hat{y}_i - y_i)^2}{\\sigma^2_e} - 3n + 2df\n\\]"
@@ -168,15 +231,15 @@
     "text": "Information Criteria"
   },
   {
-    "objectID": "presentation.html#section-14",
-    "href": "presentation.html#section-14",
+    "objectID": "presentation.html#section-18",
+    "href": "presentation.html#section-18",
     "title": "Reproducible Research in R",
     "section": "",
     "text": "Require the Hessian around the solution for their “overfit” correction.\n\nComputed via:\n\nbyproduct of optimization\nvia finite differences"
   },
   {
-    "objectID": "presentation.html#section-15",
-    "href": "presentation.html#section-15",
+    "objectID": "presentation.html#section-19",
+    "href": "presentation.html#section-19",
     "title": "Reproducible Research in R",
     "section": "",
     "text": "Require the Hessian around the solution for their “overfit” correction.\n\nComputed via:\nReproducibility"
@@ -207,21 +270,7 @@
     "href": "presentation.html#summary",
     "title": "Reproducible Research in R",
     "section": "Summary",
-    "text": "Summary\n\n\n\n\n%%{init: {'theme':'forest'}}%%\nflowchart LR\n\n  R(Reproducibility)\n  R --&gt; X(Replication)\n  R --&gt; Y(Preregistration)\n  T(Trustworthy)\n\n  X --&gt; T\n  Y --&gt; T\n  R --&gt; T"
-  },
-  {
-    "objectID": "presentation.html#now-you",
-    "href": "presentation.html#now-you",
-    "title": "Reproducible Research in R",
-    "section": "Now you!",
-    "text": "Now you!\nTry to add your name to the next slide. Every time I show this presentation your name will be there."
-  },
-  {
-    "objectID": "presentation.html#section-17",
-    "href": "presentation.html#section-17",
-    "title": "Reproducible Research in R",
-    "section": "",
-    "text": "Awesome People:\n\nAaron Peikert"
+    "text": "Summary\n\n\n\n\n\n%%{init: {'theme':'forest'}}%%\nflowchart LR\n\n  R(Reproducibility)\n  R --&gt; X(Replication)\n  R --&gt; Y(Preregistration)\n  T(Trustworthy)\n\n  X --&gt; T\n  Y --&gt; T\n  R --&gt; T"
   },
   {
     "objectID": "presentation.html#four-problems-with-reproducibility",
@@ -245,15 +294,15 @@
     "text": "ACRISS\nAssociation of Car Rental Industry Systems Standards"
   },
   {
-    "objectID": "presentation.html#section-19",
-    "href": "presentation.html#section-19",
+    "objectID": "presentation.html#section-22",
+    "href": "presentation.html#section-22",
     "title": "Reproducible Research in R",
     "section": "",
     "text": "Category\nType\nTrans / Driven wheels\nFuel / air-con\n\n\n\n\nE: Economy\nF: SUV\nA: Auto (drive unspecified)\nR: Unspecified Fuel With AC\n\n\nI: Intermediate\nT: Convertible\nB: Auto 4WD\nD: Diesel With AC\n\n\nS: Standard\nC: 2/4 Door\nD: Auto AWD\nH: Hybrid With AC\n\n\nF: Fullsize\nD: 4-5 Door\nM: Manual (drive unspecified)\nE: Electric With AC\n\n\nP: Premium\nS: Sport\n\nV: Petrol With AC"
   },
   {
-    "objectID": "presentation.html#section-20",
-    "href": "presentation.html#section-20",
+    "objectID": "presentation.html#section-23",
+    "href": "presentation.html#section-23",
     "title": "Reproducible Research in R",
     "section": "",
     "text": "EDMR"
@@ -273,36 +322,36 @@
     "text": "Four Solutions for Reproducibility\n\nversion control\ndynamic documents\nsoftware management\nworkflow orchestration"
   },
   {
-    "objectID": "presentation.html#section-21",
-    "href": "presentation.html#section-21",
+    "objectID": "presentation.html#section-24",
+    "href": "presentation.html#section-24",
     "title": "Reproducible Research in R",
     "section": "",
     "text": "R + RMarkdown + Docker + Make + Git\nhttps://github.com/aaronpeikert/reproducible-research"
   },
   {
-    "objectID": "presentation.html#section-22",
-    "href": "presentation.html#section-22",
+    "objectID": "presentation.html#section-25",
+    "href": "presentation.html#section-25",
     "title": "Reproducible Research in R",
     "section": "",
-    "text": "Julia + RMarkdown + Pkg.jl + GitHub Actions + Git\nhttps://github.com/formal-methods-mpi/pkgmanuscript/blob/main/Dockerfile#L14"
+    "text": "Julia + RMarkdown + Pkg.jl + GitHub Actions + Git\nhttps://github.com/formal-methods-mpi/pkgmanuscript/blob/main/Dockerfile"
   },
   {
-    "objectID": "presentation.html#section-23",
-    "href": "presentation.html#section-23",
+    "objectID": "presentation.html#section-26",
+    "href": "presentation.html#section-26",
     "title": "Reproducible Research in R",
     "section": "",
     "text": "Lua + Quarto + GitHub Actions + GitHub Actions + Git\nhttps://github.com/aaronpeikert/repro-talk"
   },
   {
-    "objectID": "presentation.html#section-24",
-    "href": "presentation.html#section-24",
+    "objectID": "presentation.html#section-27",
+    "href": "presentation.html#section-27",
     "title": "Reproducible Research in R",
     "section": "",
     "text": "Python + Quarto + Docker + GitHub Actions + Git\nhttps://github.com/formal-methods-mpi/projects/pull/41/files"
   },
   {
-    "objectID": "presentation.html#section-25",
-    "href": "presentation.html#section-25",
+    "objectID": "presentation.html#section-28",
+    "href": "presentation.html#section-28",
     "title": "Reproducible Research in R",
     "section": "",
     "text": "R + RMarkdown + Docker + Make + Git\nhttps://github.com/aaronpeikert/bayes-prereg/pull/97"
@@ -312,6 +361,13 @@
     "href": "presentation.html#summary-1",
     "title": "Reproducible Research in R",
     "section": "Summary",
-    "text": "Summary\n\n\n\n\n%%{init: {'theme':'forest'}}%%\nflowchart LR\n\n  R(Reproducibility)\n  R --&gt; C(Collaboration)\n  R --&gt; X(Replication)\n  R --&gt; Y(Preregistration)\n  T(Trustworthy)\n\n  X --&gt; T\n  Y --&gt; T\n  C --&gt; Cu(Cumulative)\n  T --&gt; Cu\n  C --&gt; T\n\n\n\n\n\n\n\nEdit"
+    "text": "Summary\n\n\n\n\n\n%%{init: {'theme':'forest'}}%%\nflowchart LR\n\n  R(Reproducibility)\n  R --&gt; C(Collaboration)\n  R --&gt; X(Replication)\n  R --&gt; Y(Preregistration)\n  T(Trustworthy)\n\n  X --&gt; T\n  Y --&gt; T\n  C --&gt; Cu(Cumulative)\n  T --&gt; Cu\n  C --&gt; T"
+  },
+  {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "slides-template",
+    "section": "",
+    "text": "To the extent possible under law, Aaron Peikert has waived all copyright and related or neighboring rights to this work. This work is published from Germany."
   }
 ]
