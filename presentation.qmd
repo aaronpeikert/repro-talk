@@ -1,5 +1,5 @@
 ---
-title: "Reproducible Research in R"
+title: "Reproducible Research"
 subtitle: "A Talk on How to Do the Same Thing More Than Once"
 author: "Aaron Peikert"
 institute: "Max Planck Institute for Human Development"
