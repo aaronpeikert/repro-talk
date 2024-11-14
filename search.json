@@ -44,322 +44,322 @@
   {
     "objectID": "presentation.html#section",
     "href": "presentation.html#section",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "As a student:\n\n\nConceptually\nSEXY\n\nTechnologically\nSEXY"
   },
   {
     "objectID": "presentation.html#section-1",
     "href": "presentation.html#section-1",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "At the begin of my PhD:\n\n\nConceptually\nSEXY\n\nTechnologically\nSEXY"
   },
   {
     "objectID": "presentation.html#section-2",
     "href": "presentation.html#section-2",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "At the end of my PhD:\n\n\nConceptually\nSEXY\n\nTechnologically\nSEXY"
   },
   {
     "objectID": "presentation.html#section-3",
     "href": "presentation.html#section-3",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "Now:\n\n\nConceptually\nSEXY\n\nTechnologically\nSEXY"
   },
   {
     "objectID": "presentation.html#section-4",
     "href": "presentation.html#section-4",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "Accurate, unbiased, complete, and insightful reporting of the analytic treatment of data (be it quantitative or qualitative) must be a component of all research reports.\n\n\n— Publication manual of the American Psychological Association, 7th ed."
   },
   {
     "objectID": "presentation.html#what-is-the-purpose-of-reproducibility",
     "href": "presentation.html#what-is-the-purpose-of-reproducibility",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "What is the purpose of reproducibility?",
     "text": "What is the purpose of reproducibility?"
   },
   {
     "objectID": "presentation.html#section-5",
     "href": "presentation.html#section-5",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "1. Collaboration"
   },
   {
     "objectID": "presentation.html#section-6",
     "href": "presentation.html#section-6",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "1. Collaboration\n2. Error checking"
   },
   {
     "objectID": "presentation.html#section-7",
     "href": "presentation.html#section-7",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "1. Collaboration\n2. Error checking\n3. Prediction"
   },
   {
     "objectID": "presentation.html#are-you-a-good-human-researcher",
     "href": "presentation.html#are-you-a-good-human-researcher",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "Are you a good Human / Researcher?",
     "text": "Are you a good Human / Researcher?"
   },
   {
     "objectID": "presentation.html#are-you-a-good-human-researcher-1",
     "href": "presentation.html#are-you-a-good-human-researcher-1",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "Are you a good Human / Researcher?",
     "text": "Are you a good Human / Researcher?\nPerhaps."
   },
   {
     "objectID": "presentation.html#are-you-a-good-human-researcher-2",
     "href": "presentation.html#are-you-a-good-human-researcher-2",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "Are you a good Human / Researcher?",
     "text": "Are you a good Human / Researcher?\nPerhaps.\nBut it does not hurt to want reproducibility out of selfish reasons."
   },
   {
     "objectID": "presentation.html#collaboration-3",
     "href": "presentation.html#collaboration-3",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "1. Collaboration",
     "text": "1. Collaboration\n\n\n\nNous connaissons la vérité non seulement par la raison mais encore par le coeur […]\n\n\nWe know the truth, not only by the reason, but also by the heart.\n\nPascal, B. (1670). Pensées. (Lines 110–282).\n\n→ Practical Part"
   },
   {
     "objectID": "presentation.html#error-checking-2",
     "href": "presentation.html#error-checking-2",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "2. Error checking",
     "text": "2. Error checking\n\nComputational level → Goal\nAlgorithmic level → Method\nImplementational level → Means\nHardware level → Platform\nData level → Reality\nPerson level → Experience\n\n1-3. stolen from David Marr 1982/2010 book Vision"
   },
   {
     "objectID": "presentation.html#error-checking-3",
     "href": "presentation.html#error-checking-3",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "2. Error checking",
     "text": "2. Error checking\nRedoing activities try to exclude mistakes in these domains:\n\nRedoing swaps nothing but Time\nReproduction swaps Person and Hardware\nDirect Replication swaps Data\nReimplementation swaps Implementation\nRobustness checks swap Algorithm\nConceptual Replications swap Goal"
   },
   {
     "objectID": "presentation.html#section-8",
     "href": "presentation.html#section-8",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "Same data → Same Black box → Same results"
   },
   {
     "objectID": "presentation.html#section-9",
     "href": "presentation.html#section-9",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "Same data → Same Black box → Same results\nReproducible?"
   },
   {
     "objectID": "presentation.html#section-10",
     "href": "presentation.html#section-10",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "Statistical Models\nfit\ndata"
   },
   {
     "objectID": "presentation.html#section-11",
     "href": "presentation.html#section-11",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "Statistical Models\noverfit\ndata"
   },
   {
     "objectID": "presentation.html#section-12",
     "href": "presentation.html#section-12",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "By how much?"
   },
   {
     "objectID": "presentation.html#section-13",
     "href": "presentation.html#section-13",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "By how much?\nor\nReproducibility and Overfit"
   },
   {
     "objectID": "presentation.html#section-14",
     "href": "presentation.html#section-14",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "By how much?\n\n\n\\(\\mathit{R}^2_{\\text{adj.}}\\)\n\\(C_p\\)\n\\(AIC\\)\nCross Validation"
   },
   {
     "objectID": "presentation.html#section-15",
     "href": "presentation.html#section-15",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "\\[\n\\mathit{R}^2_{\\text{adj.}} = \\mathit{R}^2 - (1-R^2)\\frac{p}{n - p - 1}\n\\]\n\\[\nC_p = \\frac{\\sum_{i=1}^n(\\hat{y}_i- y_i)^2}{\\sigma^2_e}-n-2p\n\\]"
   },
   {
     "objectID": "presentation.html#Reproducibility",
     "href": "presentation.html#Reproducibility",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "Reproducibility?",
     "text": "Reproducibility?\n\\[\n\\text{df}(\\hat{y}) = \\frac{\\sum^n_{i = 1}{\\text{Cov}(\\hat{y}_i, y_i)}}{\\sigma^2_e}\n\\]\nThis covariance requires:\n\nformal derivation\nrepeated computation on same or pertubated data"
   },
   {
     "objectID": "presentation.html#section-16",
     "href": "presentation.html#section-16",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "This covariance requires:\n\nformal derivation\nrepeated computation on same or pertubated data\n\nReproducibility."
   },
   {
     "objectID": "presentation.html#section-17",
     "href": "presentation.html#section-17",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "\\[\n\\mathit{R}^2_{\\text{adj.}} = \\mathit{R}^2 - (1 - \\mathit{R}^2)\\frac{n - df}{df - 1}\n\\]\n\\[\nC_p = \\frac{\\sum_{i=1}^n(\\hat{y}_i - y_i)^2}{\\sigma^2_e} - 3n + 2df\n\\]"
   },
   {
     "objectID": "presentation.html#information-criteria",
     "href": "presentation.html#information-criteria",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "Information Criteria",
     "text": "Information Criteria"
   },
   {
     "objectID": "presentation.html#section-18",
     "href": "presentation.html#section-18",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "Require the Hessian around the solution for their “overfit” correction.\n\nComputed via:\n\nbyproduct of optimization\nvia finite differences"
   },
   {
     "objectID": "presentation.html#section-19",
     "href": "presentation.html#section-19",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "Require the Hessian around the solution for their “overfit” correction.\n\nComputed via:\nReproducibility"
   },
   {
     "objectID": "presentation.html#cross-validation",
     "href": "presentation.html#cross-validation",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "Cross Validation",
     "text": "Cross Validation\nis\nReproduction\non subsamples."
   },
   {
     "objectID": "presentation.html#extended-definition",
     "href": "presentation.html#extended-definition",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "Extended Definition",
     "text": "Extended Definition\nFirst, computational reproducibility must ensure that the same data lead to the same results."
   },
   {
     "objectID": "presentation.html#extended-definition-1",
     "href": "presentation.html#extended-definition-1",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "Extended Definition",
     "text": "Extended Definition\nFirst, computational reproducibility must ensure that the same data lead to the same results.\nSecond, computational reproducibility must make the inductive process repeatable on similar data."
   },
   {
     "objectID": "presentation.html#summary",
     "href": "presentation.html#summary",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "Summary",
     "text": "Summary\n\n\n\n\n\n%%{init: {'theme':'forest'}}%%\nflowchart LR\n\n  R(Reproducibility)\n  R --&gt; X(Replication)\n  R --&gt; Y(Preregistration)\n  T(Trustworthy)\n\n  X --&gt; T\n  Y --&gt; T\n  R --&gt; T"
   },
   {
     "objectID": "presentation.html#four-problems-with-reproducibility",
     "href": "presentation.html#four-problems-with-reproducibility",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "Four Problems with Reproducibility",
     "text": "Four Problems with Reproducibility\n\n\nversioning\ncopy&paste errors\nsoftware dependencies\nlinking everything together"
   },
   {
     "objectID": "presentation.html#four-solutions-for-reproducibility",
     "href": "presentation.html#four-solutions-for-reproducibility",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "Four Solutions for Reproducibility",
     "text": "Four Solutions for Reproducibility\n\n\nversion control\ndynamic documents\nsoftware management\nworkflow orchestration"
   },
   {
     "objectID": "presentation.html#acriss",
     "href": "presentation.html#acriss",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "ACRISS",
     "text": "ACRISS\nAssociation of Car Rental Industry Systems Standards"
   },
   {
     "objectID": "presentation.html#section-22",
     "href": "presentation.html#section-22",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "Category\nType\nTrans / Driven wheels\nFuel / air-con\n\n\n\n\nE: Economy\nF: SUV\nA: Auto (drive unspecified)\nR: Unspecified Fuel With AC\n\n\nI: Intermediate\nT: Convertible\nB: Auto 4WD\nD: Diesel With AC\n\n\nS: Standard\nC: 2/4 Door\nD: Auto AWD\nH: Hybrid With AC\n\n\nF: Fullsize\nD: 4-5 Door\nM: Manual (drive unspecified)\nE: Electric With AC\n\n\nP: Premium\nS: Sport\n\nV: Petrol With AC"
   },
   {
     "objectID": "presentation.html#section-23",
     "href": "presentation.html#section-23",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "EDMR"
   },
   {
     "objectID": "presentation.html#the-rental-car-model",
     "href": "presentation.html#the-rental-car-model",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "The Rental Car Model",
     "text": "The Rental Car Model\nRide it like you stole it"
   },
   {
     "objectID": "presentation.html#four-solutions-for-reproducibility-1",
     "href": "presentation.html#four-solutions-for-reproducibility-1",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "Four Solutions for Reproducibility",
     "text": "Four Solutions for Reproducibility\n\nversion control\ndynamic documents\nsoftware management\nworkflow orchestration"
   },
   {
     "objectID": "presentation.html#section-24",
     "href": "presentation.html#section-24",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "R + RMarkdown + Docker + Make + Git\nhttps://github.com/aaronpeikert/reproducible-research"
   },
   {
     "objectID": "presentation.html#section-25",
     "href": "presentation.html#section-25",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "Julia + RMarkdown + Pkg.jl + GitHub Actions + Git\nhttps://github.com/formal-methods-mpi/pkgmanuscript/blob/main/Dockerfile"
   },
   {
     "objectID": "presentation.html#section-26",
     "href": "presentation.html#section-26",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "Lua + Quarto + GitHub Actions + GitHub Actions + Git\nhttps://github.com/aaronpeikert/repro-talk"
   },
   {
     "objectID": "presentation.html#section-27",
     "href": "presentation.html#section-27",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "Python + Quarto + Docker + GitHub Actions + Git\nhttps://github.com/formal-methods-mpi/projects/pull/41/files"
   },
   {
     "objectID": "presentation.html#section-28",
     "href": "presentation.html#section-28",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "",
     "text": "R + RMarkdown + Docker + Make + Git\nhttps://github.com/aaronpeikert/bayes-prereg/pull/97"
   },
   {
     "objectID": "presentation.html#summary-1",
     "href": "presentation.html#summary-1",
-    "title": "Reproducible Research in R",
+    "title": "Reproducible Research",
     "section": "Summary",
     "text": "Summary\n\n\n\n\n\n%%{init: {'theme':'forest'}}%%\nflowchart LR\n\n  R(Reproducibility)\n  R --&gt; C(Collaboration)\n  R --&gt; X(Replication)\n  R --&gt; Y(Preregistration)\n  T(Trustworthy)\n\n  X --&gt; T\n  Y --&gt; T\n  C --&gt; Cu(Cumulative)\n  T --&gt; Cu\n  C --&gt; T"
   },
